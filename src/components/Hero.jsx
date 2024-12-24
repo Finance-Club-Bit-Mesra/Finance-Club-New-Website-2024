@@ -19,10 +19,32 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="h-screen pt-24 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#7dc9fc,#e0f2fe_100%)] overflow-hidden flex items-center"
+      className="relative h-screen pt-24 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#7dc9fc,#e0f2fe_100%)] overflow-hidden flex items-center"
       id="home"
     >
-      <div className="container mx-auto max-w-[90%] h-full flex items-center">
+      <motion.img
+              src={piggy}
+              width={160}
+              height={160}
+              alt="Piggybank"
+              className="top-1/3 absolute left-1/3 sm:block md:hidden "
+              style={{
+                rotate: 0,
+              }}
+              animate={{
+                rotate:360,
+                translateY: [-100,100],
+                translateX: [-200,200],
+              }}
+              transition={{
+                repeat: Infinity ,
+                repeatType: "mirror",
+                duration: 6,
+                ease: 'easeInOut',
+              }}
+            />
+
+      <div className="container mx-auto max-w-[90%] h-full flex items-center relative z-10">
         <div className="md:flex items-center w-full">
           {/* Left Content */}
           <div className="md:w-[478px]">
@@ -53,11 +75,11 @@ export default function Hero() {
           </div>
 
           {/* Right Content */}
-          <div className="md:mt-0 md:h-screen md:flex-1 relative">
+          <div className="hidden md:block md:mt-0 md:h-screen md:flex-1 relative">
             <motion.img
               src={bitcoin}
               alt="Bitcoin"
-              className="hidden sm:block absolute h-auto w-[70%] max-w-[300px] md:max-w-none md:h-[92%] md:w-auto left-32 top-12"
+              className="absolute h-auto w-[70%] max-w-[300px] md:max-w-none md:h-[92%] md:w-auto left-32 top-12"
               animate={{
                 translateY: [-30, 30],
               }}
@@ -73,7 +95,7 @@ export default function Hero() {
               width={200}
               height={200}
               alt="Piggybank"
-              className="hidden md:block top-20 absolute -left-8"
+              className="top-20 absolute -left-8"
               style={{
                 rotate: -30,
                 translateY: translateY,
@@ -83,7 +105,7 @@ export default function Hero() {
               src={dollar}
               width={200}
               alt="Dollar"
-              className="hidden md:block absolute -bottom-8 -left-24 rotate-[30deg]"
+              className="absolute -bottom-8 -left-24 rotate-[30deg]"
               style={{
                 rotate: 30,
                 translateY: translateY,
@@ -95,3 +117,4 @@ export default function Hero() {
     </section>
   );
 }
+

@@ -45,7 +45,7 @@ const About = () => {
       className="bg-gradient-to-b from-white to-fcbluelight pt-24 overflow-x-clip"
       id='about'
     >
-      <div className="container mx-auto px-4 sm:px-8 z-10">
+      <div className="container mx-auto px-4 sm:px-8 z-10 relative">
         <div className="section-heading text-center md:text-left">
           <h2 className="section-title">
             About Us
@@ -58,7 +58,7 @@ const About = () => {
           <motion.img
             src={BIT}
             alt="BIT"
-            className="mt-0 w-[60%] mx-auto"
+            className="mt-0 w-[60%] mx-auto z-10"  
             style={{
               rotateX,
               opacity,
@@ -70,7 +70,7 @@ const About = () => {
             alt="Piggy"
             height={262}
             width={262}
-            className="hidden md:block absolute -right-24 -top-64"
+            className="hidden md:block absolute -right-24 -top-64 z-[-1]"  
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
             }}
@@ -80,7 +80,7 @@ const About = () => {
             alt="money"
             height={300}
             width={300}
-            className="hidden md:block absolute -right-20 bottom-52 opacity-75"
+            className="hidden md:block absolute -right-20 bottom-52 opacity-75 z-[-1]"  
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
               rotate: 30,
@@ -91,7 +91,7 @@ const About = () => {
             alt="bitcoin"
             height={248}
             width={248}
-            className="hidden md:block absolute bottom-20 -left-16"
+            className="hidden md:block absolute bottom-20 -left-16 z-[-1]"  
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
             }}
@@ -101,27 +101,12 @@ const About = () => {
             alt="finance"
             height={256}
             width={256}
-            className="hidden md:block absolute -top-48 -left-10 opacity-80"
+            className="hidden md:block absolute -top-48 -left-10 opacity-80 z-[-1]"  
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
             }}
           />
         </div>
-
-        
-        {/* <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 mt-0 mx-auto px-4 sm:px-8">
-          {Features.map((feature, index) => (
-            <motion.div
-              key={index}
-              className="flex flex-col gap-2 text-lg items-start rounded-xl bg-white/90 backdrop-blur-md p-8 shadow-lg"
-              whileHover={{ scale: 1.05 }} // Zoom effect
-              transition={{ type: 'spring', stiffness: 300 }}
-            >
-              <h3 className="font-bold">{feature.title}</h3>
-              <p className="text-base">{feature.description}</p>
-            </motion.div>
-          ))}
-        </div> */}
       </div>
     </section>
   );
