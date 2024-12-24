@@ -91,7 +91,7 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center">
             <Link
-              to={"/Login"}
+              to={"/login"}
               className={`px-4 py-2 rounded-md text-sm font-medium ${
                 isScrolled
                   ? "bg-green-500 text-white hover:bg-green-600"
@@ -133,7 +133,7 @@ const Navbar = () => {
             </button>
           ))}
           <Link
-            tp={"/Login"}
+            to={"/login"}
             className={`block px-3 py-2 rounded-md text-base font-medium ${
               isScrolled
                 ? "bg-green-500 text-white hover:bg-green-600"
