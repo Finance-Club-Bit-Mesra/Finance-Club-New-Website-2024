@@ -64,8 +64,8 @@ export function ScrollingCarousel() {
     <div
       ref={containerRef}
       className="relative overflow-hidden h-full bg-transparent" style={{
-        maskImage: 'linear-gradient(to bottom, rgba(224, 242, 254, 0.75), rgba(0, 0, 0, 0) 85%)',
-        WebkitMaskImage: 'linear-gradient(to bottom, rgba(224, 242, 254, 0.75), rgba(0, 0, 0, 0) 85%)',
+        maskImage: 'linear-gradient(to bottom, rgba(224, 242, 254, 0.75), rgba(0, 0, 0, 0) 102%)',
+        WebkitMaskImage: 'linear-gradient(to bottom, rgba(224, 242, 254, 0.75), rgba(0, 0, 0, 0) 102%)',
         maskRepeat: 'no-repeat',
         WebkitMaskRepeat: 'no-repeat',
       }}
@@ -73,7 +73,7 @@ export function ScrollingCarousel() {
       {carouselData.map((row, rowIndex) => (
         <div
           key={rowIndex}
-          className="flex gap-4  mt-8"
+          className="flex gap-4 mt-8"
           style={{
             transform: `translateX(${
               row.direction === 'left'

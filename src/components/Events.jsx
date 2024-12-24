@@ -5,7 +5,7 @@ import { ScrollingCarousel } from './utils/ScrollingCarousel';
 export default function Events() {
   return (
     <section className=" py-20  bg-gradient-to-b from-fcblue via-fcbluelight to-fcbluelight" id='events'>
-      {/* Info */}
+      {/* Hero Section */}
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="section-title mb-5">
