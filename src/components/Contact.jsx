@@ -7,9 +7,6 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
 } from "react-icons/fa";
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -30,7 +27,7 @@ const Contact = () => {
       className="py-20 bg-gradient-to-b from-fcbluelight via-fcblue to-[#0e91e9]"
       id="contact"
     >
-      <div className="container  px-16">
+      <div className="container mx-auto px-16">
         <h1 className="section-title mb-12">Contact Us</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

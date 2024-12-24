@@ -31,7 +31,7 @@ const TestimonialsColumn = ({ testimonials, duration, className }) => {
                     alt={name}
                     width={80}
                     height={80}
-                    className="md:h-16 md:w-16 rounded-full mr-4 sm:h-8 sm:w-8"
+                    className="h-16 w-16 rounded-full mr-4 "
                   />
                   <div className="flex flex-col">
                     <div className="font-semibold md:text-lg sm:text-sm tracking-tight leading-5">
