@@ -39,7 +39,7 @@ export default function Hero() {
               transition={{
                 repeat: Infinity ,
                 repeatType: "mirror",
-                duration: 6,
+                duration: 8,
                 ease: 'easeInOut',
               }}
             />
