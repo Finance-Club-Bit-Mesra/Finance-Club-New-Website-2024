@@ -14,11 +14,8 @@ const Navbar = () => {
   const LINKS = [
     { id: "/", name: "Home" },
     { id: "/#about", name: "About" },
-    { id: "/#services", name: "Services" },
-    { id: "/#objectives", name: "Objectives" },
     { id: "/#events", name: "Events" },
     { id: "/publications", name: "Publication" },
-    { id: "/#testimonials", name: "Testimonials" },
     { id: "/team", name: "Team" },
     { id: "/#contact", name: "Contact" },
   ];
