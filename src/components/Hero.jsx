@@ -20,7 +20,6 @@ export default function Hero() {
     <section
       ref={heroRef}
       className="relative h-screen pt-24 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#7dc9fc,#e0f2fe_100%)] overflow-hidden flex items-center"
-      id="home"
     >
       <motion.img
               src={piggy}

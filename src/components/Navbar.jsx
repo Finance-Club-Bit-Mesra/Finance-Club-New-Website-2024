@@ -17,6 +17,7 @@ const Navbar = () => {
     { id: "/#services", name: "Services" },
     { id: "/#objectives", name: "Objectives" },
     { id: "/#events", name: "Events" },
+    { id: "/publications", name: "Publication" },
     { id: "/#testimonials", name: "Testimonials" },
     { id: "/team", name: "Team" },
     { id: "/#contact", name: "Contact" },
@@ -42,8 +43,12 @@ const Navbar = () => {
       if (hash) {
         setTimeout(() => scrollToSection(`#${hash}`), 100);
       }
-    } else if (hash) {
-      scrollToSection(`#${hash}`);
+    } else {
+      if (hash) {
+        scrollToSection(`#${hash}`);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
 
     setIsOpen(false);

@@ -20,7 +20,6 @@ const Home = () => {
       <Speaker/>
       <Testimonials/>
       <Contact/>
-      <Footer/>
     </main>
   )
 }

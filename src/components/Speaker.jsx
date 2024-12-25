@@ -78,7 +78,7 @@ const Speaker = () => {
         <h2 className="mb-4 section-title">
           Inspirational Speakers
         </h2>
-        <p className="section-description text-base max-w-xl mx-auto">
+        <p className="section-description  max-w-xl mx-auto">
           Discover the influential speakers who have shared their wisdom and insights,
           enriching the entrepreneurial spirit.
         </p>

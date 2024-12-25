@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Event from "../pages/Event";
 import Team from "../pages/Team";
 import Login from "../pages/Login";
+import PublicationsPage from "../pages/PublicationsPage";
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path:"/team",
                 element:<Team/>
+            },
+            {
+                path:"/publications",
+                element:<PublicationsPage/>
             }
         ]
 

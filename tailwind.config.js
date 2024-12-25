@@ -6,7 +6,7 @@ export default {
       colors: {
         fcbluelight: "#e0f2fe",
         fcblue: "#7dc9fc",
-        fcbluedark: "#082f49",
+        fcbluedark: "#0362a1",
       },
     },
   },

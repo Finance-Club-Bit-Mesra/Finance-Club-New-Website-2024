@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Navbar from '../components/Navbar';
 import stalkthestock from "../assets/events/stalkthestock.jpeg";
 import behindthestump from "../assets/events/behindthestumps.jpeg";
 import houseoflegacy from "../assets/events/houseoflegacy.jpeg";
