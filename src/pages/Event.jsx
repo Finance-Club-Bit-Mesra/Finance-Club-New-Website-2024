@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import stalkthestock from "../assets/events/stalkthestock.jpeg";
