@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'; // Import PropTypes
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaChevronRight, FaPhone, FaEnvelope } from 'react-icons/fa';
 import notes from '../assets/notes.png';
@@ -20,10 +21,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and Info Section */}
           <div className="space-y-8 col-span-1 lg:col-span-1">
-            <a href="/" className="flex items-center space-x-2 group ">
-              <img src="/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
+            <Link href="/" className="flex items-center space-x-2 group ">
+              <img to="/Finance-Club-New-Website-2024/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
               <span className="text-2xl font-bold text-white">Finance Club, BIT MESRA</span>
-            </a>
+            </Link>
             <p className="text-sm leading-relaxed">
               We aim to acquaint students with basic economic and financial concepts and guide them on generating passive income through their skills.
             </p>
