@@ -16,7 +16,7 @@ export default function Events() {
           </p>
           <div className="flex flex-wrap justify-center">
           <Link
-              href="/events"
+              to="/Finance-Club-New-Website-2024/events"
               className="bg-blue-500 text-white px-8 py-3 rounded-xl font-medium transition-all ease-out duration-500 hover:scale-105 shadow-lg"
             >
               Show More
