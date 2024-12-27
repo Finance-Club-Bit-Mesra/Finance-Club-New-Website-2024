@@ -1,12 +1,44 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types'; // Import PropTypes
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaChevronRight, FaPhone, FaEnvelope } from 'react-icons/fa';
-import notes from '../assets/notes.png';
-import { LINKS, CONTACT_DATA } from '../constants';
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaChevronRight, FaPhone, FaEnvelope } from "react-icons/fa";
+import notes from "../assets/notes.png";
+import { LINKS, CONTACT_DATA } from "../constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (hash) => {
+    if (!hash) return;
+
+    const sectionId = hash.replace("#", "");
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.warn("Section not found:", sectionId);
+    }
+  };
+
+  const handleNavigation = (link) => {
+    const [path, hash] = link.split("#");
+
+    if (location.pathname !== path) {
+      navigate(path, { replace: true });
+      if (hash) {
+        setTimeout(() => scrollToSection(`#${hash}`), 100);
+      }
+    } else {
+      if (hash) {
+        scrollToSection(`#${hash}`);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+  };
+
 
   return (
     <footer className="relative bg-gray-900 text-gray-300 overflow-hidden">
@@ -17,12 +49,12 @@ const Footer = () => {
           className="w-full h-full object-cover opacity-5"
         />
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-12 lg:px-10 pt-10 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Logo and Info Section */}
+          {/* About Section */}
           <div className="space-y-8 col-span-1 lg:col-span-1">
-            <Link to="/" className="flex items-center space-x-2 group ">
-              <img to="/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
+            <Link to="/" className="flex items-center space-x-2 group">
+              <img src="/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
               <span className="text-2xl font-bold text-white">Finance Club, BIT MESRA</span>
             </Link>
             <p className="text-sm leading-relaxed">
@@ -39,9 +71,16 @@ const Footer = () => {
           {/* Useful Links Section */}
           <div className="col-span-1 lg:col-span-1">
             <h4 className="text-xl font-semibold text-white mb-6 pb-2 text-center border-b border-gray-700">Useful Links</h4>
-            <ul className="grid grid-cols-2 gap-4">
-              {LINKS.map(link => (
-                <FooterLink key={link.id} href={`${link.id}`} text={link.name} />
+            <ul className="grid grid-cols-2 gap-4 ">
+              {LINKS.map((link) => (
+                <button
+                key={link.id}
+                onClick={() => handleNavigation(link.id)}
+                className="flex items-center space-x-2 text-start"
+              >
+                <FaChevronRight size={16} />
+                <span>{link.name}</span>
+              </button>
               ))}
             </ul>
           </div>
@@ -58,21 +97,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
       </div>
-        <div className="bg-gray-800 py-4">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
-            <p>&copy; {currentYear} <strong>Finance Club</strong>. All Rights Reserved.</p>
-          </div>
+      <div className="bg-gray-800 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+          <p>&copy; {currentYear} <strong>Finance Club</strong>. All Rights Reserved.</p>
         </div>
+      </div>
     </footer>
   );
 };
 
 const SocialIcon = ({ href, icon, label }) => (
-  <Link to={href} className="hover:text-white transition-colors duration-300 transform hover:scale-110" aria-label={label}>
+  <a href={href} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 transform hover:scale-110" aria-label={label}>
     {icon}
-  </Link>
+  </a>
 );
 
 SocialIcon.propTypes = {
@@ -81,27 +119,13 @@ SocialIcon.propTypes = {
   label: PropTypes.string.isRequired,
 };
 
-const FooterLink = ({ href, text }) => (
-  <li>
-    <Link to={href} className="hover:text-white transition-colors duration-300 flex items-center group">
-      <FaChevronRight size={12} className="mr-2 transition-transform duration-300 group-hover:translate-x-1" />
-      {text}
-    </Link>
-  </li>
-);
-
-FooterLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-};
-
 const ContactItem = ({ icon, text, href, linkText }) => (
   <p className="flex items-center mb-2">
     <span className="mr-2 flex-shrink-0">{icon}</span>
     {text && <span className="mr-1">{text}</span>}
-    <Link to={href} className="hover:text-white transition-colors duration-300">
+    <a href={href} className="hover:text-white transition-colors duration-300">
       {linkText}
-    </Link>
+    </a>
   </p>
 );
 
