@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and Info Section */}
           <div className="space-y-8 col-span-1 lg:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 group ">
+            <Link to="/" className="flex items-center space-x-2 group ">
               <img to="/Finance-Club-New-Website-2024/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
               <span className="text-2xl font-bold text-white">Finance Club, BIT MESRA</span>
             </Link>
