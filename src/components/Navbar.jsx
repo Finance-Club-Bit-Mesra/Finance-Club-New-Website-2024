@@ -72,7 +72,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center py-4 px-2">
-            <img src="/Finance-Club-New-Website-2024/fc_2.png" alt="Logo" className="h-10 w-auto mr-2" />
+            <img src="/fc_2.png" alt="Logo" className="h-10 w-auto mr-2" />
           </Link>
 
           <div className="hidden lg:flex items-center space-x-1">

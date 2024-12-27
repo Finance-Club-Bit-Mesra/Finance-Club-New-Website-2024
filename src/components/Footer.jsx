@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Logo and Info Section */}
           <div className="space-y-8 col-span-1 lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2 group ">
-              <img to="/Finance-Club-New-Website-2024/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
+              <img to="/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
               <span className="text-2xl font-bold text-white">Finance Club, BIT MESRA</span>
             </Link>
             <p className="text-sm leading-relaxed">
@@ -70,9 +70,9 @@ const Footer = () => {
 };
 
 const SocialIcon = ({ href, icon, label }) => (
-  <a href={href} className="hover:text-white transition-colors duration-300 transform hover:scale-110" aria-label={label}>
+  <Link to={href} className="hover:text-white transition-colors duration-300 transform hover:scale-110" aria-label={label}>
     {icon}
-  </a>
+  </Link>
 );
 
 SocialIcon.propTypes = {
@@ -83,10 +83,10 @@ SocialIcon.propTypes = {
 
 const FooterLink = ({ href, text }) => (
   <li>
-    <a href={href} className="hover:text-white transition-colors duration-300 flex items-center group">
+    <Link to={href} className="hover:text-white transition-colors duration-300 flex items-center group">
       <FaChevronRight size={12} className="mr-2 transition-transform duration-300 group-hover:translate-x-1" />
       {text}
-    </a>
+    </Link>
   </li>
 );
 
@@ -99,9 +99,9 @@ const ContactItem = ({ icon, text, href, linkText }) => (
   <p className="flex items-center mb-2">
     <span className="mr-2 flex-shrink-0">{icon}</span>
     {text && <span className="mr-1">{text}</span>}
-    <a href={href} className="hover:text-white transition-colors duration-300">
+    <Link to={href} className="hover:text-white transition-colors duration-300">
       {linkText}
-    </a>
+    </Link>
   </p>
 );
 
