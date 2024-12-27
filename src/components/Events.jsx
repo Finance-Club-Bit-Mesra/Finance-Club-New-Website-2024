@@ -1,5 +1,5 @@
 'use client';
-
+import { Link } from 'react-router';
 import { ScrollingCarousel } from './utils/ScrollingCarousel';
 
 export default function Events() {
@@ -15,12 +15,12 @@ export default function Events() {
           Explore our club events, workshops, and speaker sessions. Join us for engaging learning experiences and networking opportunities.
           </p>
           <div className="flex flex-wrap justify-center">
-          <a
+          <Link
               href="/events"
               className="bg-blue-500 text-white px-8 py-3 rounded-xl font-medium transition-all ease-out duration-500 hover:scale-105 shadow-lg"
             >
               Show More
-            </a>
+            </Link>
             
           </div>
         </div>
