@@ -13,23 +13,23 @@ const router = createBrowserRouter([
         element: <App/>,
         children:[
             {
-                path:"Finance-Club-New-Website-2024/",
+                path:"/",
                 element:<Home/>
             },
             {
-                path:"Finance-Club-New-Website-2024/events",
+                path:"/events",
                 element:<Event/>
             },
             {
-                path:"Finance-Club-New-Website-2024/login",
+                path:"/login",
                 element:<Login/>
             },
             {
-                path:"Finance-Club-New-Website-2024/team",
+                path:"/team",
                 element:<Team/>
             },
             {
-                path:"Finance-Club-New-Website-2024/publications",
+                path:"/publications",
                 element:<PublicationsPage/>
             }
         ]
