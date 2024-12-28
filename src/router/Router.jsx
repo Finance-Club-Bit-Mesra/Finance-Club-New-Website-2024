@@ -5,7 +5,7 @@ import Event from "../pages/Event";
 import Team from "../pages/Team";
 import Login from "../pages/Login";
 import PublicationsPage from "../pages/PublicationsPage";
-import NotFound from "../components/NotFound";
+import NotFound from "../pages/NotFound";
 
 const router = createHashRouter([
     {

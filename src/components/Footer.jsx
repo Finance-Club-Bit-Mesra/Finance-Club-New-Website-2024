@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* About Section */}
           <div className="space-y-8 col-span-1 lg:col-span-1">
-            <Link to="/" className="flex items-center space-x-2 group">
+            <Link onClick={() => handleNavigation("/")} className="flex items-center space-x-2 group">
               <img src="/fc.png" alt="Finance Club Logo" className="w-auto h-8" />
               <span className="text-2xl font-bold text-white">Finance Club, BIT MESRA</span>
             </Link>
@@ -76,9 +76,9 @@ const Footer = () => {
                 <button
                 key={link.id}
                 onClick={() => handleNavigation(link.id)}
-                className="flex items-center space-x-2 text-start"
+                className="flex items-center space-x-2 text-start hover:text-white "
               >
-                <FaChevronRight size={16} />
+                <FaChevronRight size={16} className="hover:translate-x-1 transition-all duration-300 ease-out" />
                 <span>{link.name}</span>
               </button>
               ))}
@@ -108,7 +108,7 @@ const Footer = () => {
 };
 
 const SocialIcon = ({ href, icon, label }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 transform hover:scale-110" aria-label={label}>
+  <a href={href} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-all duration-300 ease-out transform hover:scale-110" aria-label={label}>
     {icon}
   </a>
 );
