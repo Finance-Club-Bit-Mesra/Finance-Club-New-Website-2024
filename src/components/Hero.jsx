@@ -113,6 +113,7 @@ export default function Hero() {
               src={bitcoin}
               alt="Bitcoin"
               className="absolute h-auto w-[70%] max-w-[300px] md:max-w-none md:h-[92%] md:w-auto left-32 top-12"
+              loading="lazy"
               animate={{
                 translateY: [-30, 30],
               }}
@@ -129,6 +130,7 @@ export default function Hero() {
               height={200}
               alt="Piggybank"
               className="top-20 absolute -left-8"
+              loading="lazy"
               style={{
                 rotate: -30,
                 translateY: translateY,
@@ -139,6 +141,7 @@ export default function Hero() {
               width={200}
               alt="Dollar"
               className="absolute -bottom-8 -left-24 rotate-[30deg]"
+              loading="lazy"
               style={{
                 rotate: 30,
                 translateY: translateY,

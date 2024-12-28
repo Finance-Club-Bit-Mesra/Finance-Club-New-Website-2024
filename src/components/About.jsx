@@ -59,6 +59,7 @@ const About = () => {
             src={BIT}
             alt="BIT"
             className="mt-0 w-[60%] mx-auto z-10"  
+            loading="lazy"
             style={{
               rotateX,
               opacity,
@@ -70,7 +71,8 @@ const About = () => {
             alt="Piggy"
             height={262}
             width={262}
-            className="hidden md:block absolute -right-24 -top-64 z-[-1]"  
+            className="hidden md:block absolute -right-24 -top-64 z-[-1]"
+            loading="lazy"  
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
             }}
@@ -81,6 +83,7 @@ const About = () => {
             height={300}
             width={300}
             className="hidden md:block absolute -right-20 bottom-52 opacity-75 z-[-1]"  
+            loading="lazy"
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
               rotate: 30,
@@ -92,6 +95,7 @@ const About = () => {
             height={248}
             width={248}
             className="hidden md:block absolute bottom-20 -left-16 z-[-1]"  
+            loading="lazy"
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
             }}
@@ -102,6 +106,7 @@ const About = () => {
             height={256}
             width={256}
             className="hidden md:block absolute -top-48 -left-10 opacity-80 z-[-1]"  
+            loading="lazy"
             style={{
               translateY: useTransform(scrollYProgress, [0, 1], [150, -150]),
             }}
