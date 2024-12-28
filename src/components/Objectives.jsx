@@ -63,7 +63,7 @@ export default function Objectives() {
   return (
     <section ref={sectionRef} className="relative bg-gradient-to-t from-fcblue to-fcbluelight " id="objectives">
       {/* Content */}
-      <div className="container mx-auto px-16 py-24">
+      <div className="container mx-auto px-8 py-24">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left Column */}
           <div className="space-y-8 self-start h-full">

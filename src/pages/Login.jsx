@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react';
+import { useState,useEffect,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Fc1 from '../assets/fc1.png';
 import bg from '../assets/bg.jpg';
@@ -25,8 +25,14 @@ export default function Login() {
     }));
   };
 
-  const [state, handleSubmit] = useForm("mdkkgpwp");
-    
+    //for emailing we have used freespree services
+    const formRef = useRef(null);
+    const [state, handleSubmit] = useForm("xkggrkdy");
+  
+    const clearForm = () => {
+      formRef.current.reset();
+    };
+  
     useEffect(() => {
       if (state.succeeded) {
         Swal.fire({
@@ -35,7 +41,7 @@ export default function Login() {
           icon: "success",
           confirmButtonText: "OK",
         }).then(() => {
-          window.location.reload(); 
+          clearForm();
         });
       }
     }, [state.succeeded]);
@@ -65,7 +71,7 @@ export default function Login() {
         <Link to="/" className="mb-4 lg:mb-8">
           <img src={Fc1} alt="Finance Club Logo" className="h-12 lg:h-16" />
         </Link>
-        <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-4 ">
+        <form ref={formRef} onSubmit={handleSubmit} className="w-full max-w-lg space-y-4 ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>

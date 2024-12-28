@@ -127,10 +127,11 @@ EventCard.propTypes = {
     date: PropTypes.string.isRequired,
   }).isRequired,
 };
+
 const Events = () => {
   return (
     <section className="min-h-screen py-24 ">
-      <div className="container mx-auto px-16">
+      <div className="container mx-auto px-2">
         <h2 className=" section-title mb-12">Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-16 p-8">
           {events.map(event => (
@@ -192,7 +193,7 @@ WorkshopCard.propTypes = {
 const Workshop = () => {
   return (
     <section className="min-h-screen py-24 ">
-      <div className="container mx-auto px-16">
+      <div className="container mx-auto px-2">
         <h2 className=" section-title mb-12">Workshops and Webinars</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 p-8">
           {workshop.map(workshop => (

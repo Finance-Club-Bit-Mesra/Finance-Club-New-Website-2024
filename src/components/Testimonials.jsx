@@ -65,7 +65,7 @@ TestimonialsColumn.propTypes = {
 
 const Testimonials = () => {
   return (
-    <section className="py-16 px-16" id="testimonials">
+    <section className="py-16 px-8" id="testimonials">
       <div className="container mx-auto">
         <div className="section-heading">
           <h2 className="section-title mt-5">Testimonials</h2>

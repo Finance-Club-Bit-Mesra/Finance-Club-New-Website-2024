@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useEffect } from "react";
+import { useEffect,useRef } from "react";
 import { useForm } from '@formspree/react';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -24,7 +24,13 @@ L.Icon.Default.mergeOptions({
 const Contact = () => {
   const position = [23.4121, 85.4384]; // Coordinates for BIT Mesra, Ranchi, India
 
-  const [state, handleSubmit] = useForm("mdkkgpwp");
+  //for emailing we have used freespree services
+  const formRef = useRef(null);
+  const [state, handleSubmit] = useForm("xkggrkdy");
+
+  const clearForm = () => {
+    formRef.current.reset();
+  };
 
   useEffect(() => {
     if (state.succeeded) {
@@ -34,7 +40,7 @@ const Contact = () => {
         icon: "success",
         confirmButtonText: "OK",
       }).then(() => {
-        window.location.reload(); 
+        clearForm();
       });
     }
   }, [state.succeeded]);
@@ -45,7 +51,7 @@ const Contact = () => {
       className="py-20 bg-gradient-to-b from-fcbluelight via-fcblue to-[#0e91e9]"
       id="contact"
     >
-      <div className="container mx-auto px-16">
+      <div className="container mx-auto px-8">
         <h1 className="section-title mb-12">Contact Us</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -109,7 +115,7 @@ const Contact = () => {
           {/* Form Section */}
           <div className="bg-white/25 backdrop-blur-md p-8 rounded-lg shadow-lg">
             <h3 className="py-6 section-title ">Send a Message</h3>
-            <form onSubmit={handleSubmit}>
+            <form ref={formRef} onSubmit={handleSubmit}>
               {CONTACT_DATA.formFields.map((field, index) =>
                 field.type === "textarea" ? (
                   <textarea
