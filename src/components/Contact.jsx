@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useEffect } from "react";
 import { useForm } from '@formspree/react';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -24,13 +25,19 @@ const Contact = () => {
   const position = [23.4121, 85.4384]; // Coordinates for BIT Mesra, Ranchi, India
 
   const [state, handleSubmit] = useForm("mdkkgpwp");
-  if (state.succeeded) {
-    Swal.fire({
-      title: "Success!",
-      text: "Message sent successfully!",
-      icon: "success"
-    });
-  }
+
+  useEffect(() => {
+    if (state.succeeded) {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        window.location.reload(); 
+      });
+    }
+  }, [state.succeeded]);
 
   
   return (

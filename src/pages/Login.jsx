@@ -26,16 +26,22 @@ export default function Login() {
   };
 
   const [state, handleSubmit] = useForm("mdkkgpwp");
-  if (state.succeeded) {
-    Swal.fire({
-      title: "Success!",
-      text: "Message sent successfully!",
-      icon: "success"
-    });
-  }
+    
+    useEffect(() => {
+      if (state.succeeded) {
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent successfully!",
+          icon: "success",
+          confirmButtonText: "OK",
+        }).then(() => {
+          window.location.reload(); 
+        });
+      }
+    }, [state.succeeded]);
 
   useEffect(() => {
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
