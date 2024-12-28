@@ -91,9 +91,9 @@ export const teamData = [
         name: "Shubham Agarwal",
         position: "Joint-President",
         image: shubhagr,
-        linkedin: "https://www.linkedin.com/in/shubham-agarwal-526b571b0/",
-        facebook: "https://www.facebook.com/profile.php?id=100058178958716",
-        instagram: "https://www.instagram.com/shubham_agarwaal_/",
+        linkedin: "https://www.linkedin.com/in/shubham-agrawal-87842b22b",
+        facebook: "https://www.facebook.com/profile.php?id=100084721501713",
+        instagram: "",
       },
       {
         name: "Rishika Kumari",
@@ -519,10 +519,10 @@ export const CONTACT_DATA = {
 
   email: "financeclub@bitmesra.ac.in",
   formFields: [
-    { type: "text", placeholder: "Your Name" },
-    { type: "email", placeholder: "Your Email" },
-    { type: "text", placeholder: "Your Subject" },
-    { type: "textarea", placeholder: "Your Message", rows: 5 },
+    { type: "text",name:"Name", placeholder: "Your Name"},
+    { type: "email",name:"Email", placeholder: "Your Email" },
+    { type: "text",name:"subject", placeholder: "Your Subject" },
+    { type: "textarea",name:"message", placeholder: "Your Message", rows: 5 },
   ],
   socialLinks: [
     { link: "https://facebook.com", icon: "<FaFacebook />" },
