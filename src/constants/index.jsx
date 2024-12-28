@@ -93,7 +93,7 @@ export const teamData = [
         image: shubhagr,
         linkedin: "https://www.linkedin.com/in/shubham-agrawal-87842b22b",
         facebook: "https://www.facebook.com/profile.php?id=100084721501713",
-        instagram: "",
+        instagram: "https://www.instagram.com/shubham_agrawal_/profilecard/?igsh=MWI5N2NtN3pjeXFuYw==",
       },
       {
         name: "Rishika Kumari",

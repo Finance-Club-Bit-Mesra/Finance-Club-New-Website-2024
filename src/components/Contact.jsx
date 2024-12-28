@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { CONTACT_DATA } from "../constants";
@@ -102,6 +102,7 @@ const Contact = () => {
                 field.type === "textarea" ? (
                   <textarea
                     key={index}
+                    name={field.name}
                     placeholder={field.placeholder}
                     className="w-full p-4 mb-4 bg-white/50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     rows={field.rows}
@@ -110,6 +111,7 @@ const Contact = () => {
                 ) : (
                   <input
                     key={index}
+                    name={field.name}
                     type={field.type}
                     placeholder={field.placeholder}
                     className="w-full p-4 mb-4 bg-white/50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -117,7 +119,7 @@ const Contact = () => {
                   />
                 )
               )}
-              <button disabled={state.submitting}
+              <button
                 type="submit" value="send"
                 className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
