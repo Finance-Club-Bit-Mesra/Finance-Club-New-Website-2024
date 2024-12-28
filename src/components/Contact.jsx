@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useForm } from '@formspree/react';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { CONTACT_DATA } from "../constants";
@@ -21,6 +22,12 @@ L.Icon.Default.mergeOptions({
 const Contact = () => {
   const position = [23.4121, 85.4384]; // Coordinates for BIT Mesra, Ranchi, India
 
+  const [state, handleSubmit] = useForm("mdkkgpwp");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
+
+  
   return (
     <section
       className="py-20 bg-gradient-to-b from-fcbluelight via-fcblue to-[#0e91e9]"
@@ -90,26 +97,30 @@ const Contact = () => {
           {/* Form Section */}
           <div className="bg-white/25 backdrop-blur-md p-8 rounded-lg shadow-lg">
             <h3 className="py-6 section-title ">Send a Message</h3>
-            <form>
+            <form onSubmit={handleSubmit}>
               {CONTACT_DATA.formFields.map((field, index) =>
                 field.type === "textarea" ? (
                   <textarea
                     key={index}
+                    name={field.name}
                     placeholder={field.placeholder}
                     className="w-full p-4 mb-4 bg-white/50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     rows={field.rows}
+                    
                   ></textarea>
                 ) : (
                   <input
                     key={index}
+                    name={field.name}
                     type={field.type}
                     placeholder={field.placeholder}
                     className="w-full p-4 mb-4 bg-white/50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    
                   />
                 )
               )}
               <button
-                type="submit"
+                type="submit" value="send"
                 className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Send Message
