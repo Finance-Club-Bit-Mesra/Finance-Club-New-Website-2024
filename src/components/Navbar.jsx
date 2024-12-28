@@ -71,7 +71,8 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center py-4 px-2">
+          <Link key={'/'}
+                onClick={() => handleNavigation('/')} className="flex items-center py-4 px-2">
             <img src="/fc_2.png" alt="Logo" className="h-10 w-auto mr-2" />
           </Link>
 
