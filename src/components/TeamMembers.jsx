@@ -48,7 +48,7 @@ const TeamMembers = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 w-full max-w-[350px]"
             >
-              <img src={member.image} alt={member.name} className=" mx-auto w-full h-72 object-cover" />
+              <img src={member.image} alt={member.name} className=" mx-auto w-full h-72 object-cover" loading='lazy'/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
                 <p className="text-gray-600">{member.position}</p>
