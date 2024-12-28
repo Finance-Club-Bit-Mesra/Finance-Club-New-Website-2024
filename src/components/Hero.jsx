@@ -7,8 +7,41 @@ import piggy from "../assets/piggybank.png";
 import dollar from "../assets/dollar.png";
 import ArrowIcon from "../assets/arrow-right.svg";
 import { Link } from "react-router";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Hero() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (hash) => {
+    if (!hash) return;
+
+    const sectionId = hash.replace("#", "");
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.warn("Section not found:", sectionId);
+    }
+  };
+
+  const handleNavigation = (link) => {
+    const [path, hash] = link.split("#");
+
+    if (location.pathname !== path) {
+      navigate(path, { replace: true });
+      if (hash) {
+        setTimeout(() => scrollToSection(`#${hash}`), 100);
+      }
+    } else {
+      if (hash) {
+        scrollToSection(`#${hash}`);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+  };
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -59,8 +92,9 @@ export default function Hero() {
                 <button className="btn btn-primary">Join Us</button>
               </Link>
 
-              <Link
-                to={'#about'}
+              <button
+                key={'#about'}
+                onClick={() => handleNavigation('#about')}
                 className="btn btn-text gap-1 group transition-all duration-300 ease-in-out flex items-center"
               >
                 <span>Learn more</span>
@@ -69,7 +103,7 @@ export default function Hero() {
                   alt="Arrow"
                   className="h-5 w-5 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1"
                 />
-              </Link>
+              </button>
             </div>
           </div>
 
