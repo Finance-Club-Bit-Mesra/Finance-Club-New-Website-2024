@@ -5,11 +5,13 @@ import Event from "../pages/Event";
 import Team from "../pages/Team";
 import Login from "../pages/Login";
 import PublicationsPage from "../pages/PublicationsPage";
+import NotFound from "../components/NotFound";
 
 const router = createHashRouter([
     {
         path: "/",
         element: <App />,
+        errorElement:<NotFound/>,
         children: [
             {
                 path: "/",
@@ -30,6 +32,10 @@ const router = createHashRouter([
             {
                 path: "/publications",
                 element: <PublicationsPage />
+            },
+            {
+                path: "/*",
+                element: <NotFound />  
             }
         ]
     }

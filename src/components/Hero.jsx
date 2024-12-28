@@ -59,8 +59,8 @@ export default function Hero() {
                 <button className="btn btn-primary">Join Us</button>
               </Link>
 
-              <a
-                href="#about"
+              <Link
+                to={'#about'}
                 className="btn btn-text gap-1 group transition-all duration-300 ease-in-out flex items-center"
               >
                 <span>Learn more</span>
@@ -69,7 +69,7 @@ export default function Hero() {
                   alt="Arrow"
                   className="h-5 w-5 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
