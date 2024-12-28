@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useForm } from '@formspree/react';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import Swal from 'sweetalert2'
 import { CONTACT_DATA } from "../constants";
 import {
   FaMapMarkerAlt,
@@ -24,7 +25,11 @@ const Contact = () => {
 
   const [state, handleSubmit] = useForm("mdkkgpwp");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+    Swal.fire({
+      title: "Success!",
+      text: "Message sent successfully!",
+      icon: "success"
+    });
   }
 
   
@@ -106,7 +111,7 @@ const Contact = () => {
                     placeholder={field.placeholder}
                     className="w-full p-4 mb-4 bg-white/50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     rows={field.rows}
-                    
+                    required
                   ></textarea>
                 ) : (
                   <input
@@ -115,7 +120,7 @@ const Contact = () => {
                     type={field.type}
                     placeholder={field.placeholder}
                     className="w-full p-4 mb-4 bg-white/50 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    
+                    required
                   />
                 )
               )}

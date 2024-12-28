@@ -2,6 +2,8 @@ import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Fc1 from '../assets/fc1.png';
 import bg from '../assets/bg.jpg';
+import { useForm } from '@formspree/react';
+import Swal from 'sweetalert2';
 
 export default function Login() {
   
@@ -23,11 +25,14 @@ export default function Login() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
-  };
+  const [state, handleSubmit] = useForm("mdkkgpwp");
+  if (state.succeeded) {
+    Swal.fire({
+      title: "Success!",
+      text: "Message sent successfully!",
+      icon: "success"
+    });
+  }
 
   useEffect(() => {
       window.scrollTo(0, 0);
@@ -65,6 +70,7 @@ export default function Login() {
                 value={formData.name}
                 onChange={handleChange}
                 className="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                required
               />
             </div>
             <div>
@@ -76,6 +82,7 @@ export default function Login() {
                 value={formData.roll}
                 onChange={handleChange}
                 className="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                required
               />
             </div>
           </div>
@@ -89,6 +96,7 @@ export default function Login() {
                 value={formData.branch}
                 onChange={handleChange}
                 className="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                required
               />
             </div>
             <div>
@@ -100,6 +108,7 @@ export default function Login() {
                 value={formData.email}
                 onChange={handleChange}
                 className="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                required
               />
             </div>
           </div>
@@ -112,6 +121,7 @@ export default function Login() {
               value={formData.resumeLink}
               onChange={handleChange}
               className="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              required
             />
           </div>
           <div>
@@ -123,6 +133,7 @@ export default function Login() {
               onChange={handleChange}
               rows={3}
               className="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              required
             ></textarea>
           </div>
           <div>
@@ -134,6 +145,7 @@ export default function Login() {
               onChange={handleChange}
               rows={3}
               className="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              required
             ></textarea>
           </div>
           <button
