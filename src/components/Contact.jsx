@@ -1,10 +1,10 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useEffect,useRef } from "react";
+import { useEffect,useState,useRef } from "react";
 import { useForm } from '@formspree/react';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import Swal from 'sweetalert2'
 import { CONTACT_DATA } from "../constants";
+import Modal from "./Modal";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -24,9 +24,12 @@ L.Icon.Default.mergeOptions({
 const Contact = () => {
   const position = [23.4121, 85.4384]; // Coordinates for BIT Mesra, Ranchi, India
 
-  //for emailing we have used freespree services
+
+  const [isModalOpen, setModalOpen] = useState(false);
   const formRef = useRef(null);
-  const [state, handleSubmit] = useForm("xkggrkdy");
+
+    //for emailing we have used freespree services
+  const [state, handleSubmit] = useForm("mdkkgpwp");
 
   const clearForm = () => {
     formRef.current.reset();
@@ -34,16 +37,15 @@ const Contact = () => {
 
   useEffect(() => {
     if (state.succeeded) {
-      Swal.fire({
-        title: "Success!",
-        text: "Message sent successfully!",
-        icon: "success",
-        confirmButtonText: "OK",
-      }).then(() => {
-        clearForm();
-      });
+      setModalOpen(true);
     }
   }, [state.succeeded]);
+
+
+  const closeModal = () => {
+    setModalOpen(false);
+    clearForm(); 
+  };
 
   
   return (
@@ -147,6 +149,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        title="Success!"
+        message="Message sent successfully!"
+      />
+      
     </section>
   );
 };

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Fc1 from '../assets/fc1.png';
 import bg from '../assets/bg.jpg';
 import { useForm } from '@formspree/react';
-import Swal from 'sweetalert2';
+import Modal from '../components/Modal';
 
 export default function Login() {
   
@@ -27,28 +27,36 @@ export default function Login() {
 
     //for emailing we have used freespree services
     const formRef = useRef(null);
-    const [state, handleSubmit] = useForm("xkggrkdy");
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [state, handleSubmit] = useForm("mdkkgpwp");
   
     const clearForm = () => {
-      formRef.current.reset();
+      setFormData({
+        name: '',
+        roll: '',
+        branch: '',
+        email: '',
+        resumeLink: '',
+        joinReason: '',
+        otherQueries: '',
+      });
+  
+      if (formRef.current) {
+        formRef.current.reset();
+      }
     };
   
     useEffect(() => {
       if (state.succeeded) {
-        Swal.fire({
-          title: "Success!",
-          text: "Message sent successfully!",
-          icon: "success",
-          confirmButtonText: "OK",
-        }).then(() => {
-          clearForm();
-        });
+        setModalOpen(true);
       }
     }, [state.succeeded]);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  
+  
+    const closeModal = () => {
+      setModalOpen(false);
+      clearForm(); 
+    };
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen py-24 sm:px-6 lg:px-8 overflow-hidden">
@@ -169,7 +177,13 @@ export default function Login() {
         </form>
       </div>
 
-      
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        title="Success!"
+        message="Message sent successfully!"
+      />
+
     </div>
      
   );
