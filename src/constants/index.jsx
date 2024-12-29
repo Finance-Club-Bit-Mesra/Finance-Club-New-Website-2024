@@ -237,7 +237,7 @@ export const teamData = [
     ],
   },
   {
-    title: "Sponsorship & Liasoning Team",
+    title: "Sponsorship & Liasioning Team",
     members: [
       {
         name: "Tarun Kumar",
