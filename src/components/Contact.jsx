@@ -107,9 +107,9 @@ const Contact = () => {
               <FaEnvelope className="text-gray-800 text-3xl" />
               <div className="w-full">
                 <h3 className="text-xl font-bold">Email Us</h3>
-                <p className="text-black text-sm break-words">
+                <a className="text-black text-sm break-words" href="mailto:financeclub@bitmesra.ac.in">
                   {CONTACT_DATA.email}
-                </p>
+                </a>
               </div>
             </div>
           </div>
