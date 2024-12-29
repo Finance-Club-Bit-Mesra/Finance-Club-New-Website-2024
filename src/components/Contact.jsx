@@ -29,7 +29,7 @@ const Contact = () => {
   const formRef = useRef(null);
 
     //for emailing we have used freespree services
-  const [state, handleSubmit] = useForm("mdkkgpwp");
+  const [state, handleSubmit] = useForm("xkggrkdy");
 
   const clearForm = () => {
     formRef.current.reset();
