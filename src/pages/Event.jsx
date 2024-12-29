@@ -15,6 +15,7 @@ import bitnishan from "../assets/events/bitnishan.jpg";
 import cfa from "../assets/workshop/cfa.jpg";
 import virendra from "../assets/workshop/virendra.jpg";
 import zerodha from "../assets/workshop/zerodha.jpg";
+
 const events = [
   {
     id: 1,
@@ -48,8 +49,7 @@ const events = [
   {
     id: 5,
     title: "Arth Anarth",
-    description: " Show off your financial wit in our meme competition! From stock market laughs to money management jokes, bring your best memes to the table.",
-
+    description: "Show off your financial wit in our meme competition! From stock market laughs to money management jokes, bring your best memes to the table.",
     date: "20th Jan",
     image: arthanarth,
   },
@@ -81,11 +81,10 @@ const events = [
     date: "20th January",
     image: chess,
   },
-  
   {
     id: 11,
     title: "Wall Street Auction",
-    description: "Finance Club brings you the Wall Street Auction, where you and your team can channel your inner stockbroker, bid on hot stocks, and race to build the ultimate portfolio. ",
+    description: "Finance Club brings you the Wall Street Auction, where you and your team can channel your inner stockbroker, bid on hot stocks, and race to build the ultimate portfolio.",
     date: "6th October",
     image: wallstreet,
   },
@@ -103,45 +102,7 @@ const events = [
     date: "20th January",
     image: estimania,
   },
-
 ];
-const EventCard = ({ event }) => (
-  <div className="relative overflow-hidden rounded-lg shadow-lg group">
-    <img 
-      src={event.image} 
-      alt={event.title} 
-      className="w-full h-80 object-cover transition-all duration-300 group-hover:blur-sm"
-    />
-    <div className="absolute inset-0 flex flex-col justify-center items-center p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      <h3 className="text-xl font-bold text-white mb-2">{event.title}</h3>
-      <p className="text-sm text-white text-center">{event.description}</p>
-      <p className="text-sm font-bold text-white mt-2">{event.date}</p>
-    </div>
-  </div>
-);
-EventCard.propTypes = {
-  event: PropTypes.shape({
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-const Events = () => {
-  return (
-    <section className="min-h-screen py-24 ">
-      <div className="container mx-auto px-2">
-        <h2 className=" section-title mb-12">Events</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-16 p-8">
-          {events.map(event => (
-            <EventCard key={event.id} event={event} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const workshop = [
   {
@@ -162,56 +123,67 @@ const workshop = [
   {
     id: 3,
     title: "Exclusive Investment Lessons",
-    description: "Learn the strategies, discipline, and insights required to navigate the complexities of the market from a professional who has seen it all. ",
+    description: "Learn the strategies, discipline, and insights required to navigate the complexities of the market from a professional who has seen it all.",
     date: "December & January",
     image: virendra,
   },
 ];
-const WorkshopCard = ({ workshop }) => (
-  <div className="relative overflow-hidden rounded-lg shadow-lg group">
+
+const Card = ({ item, type }) => (
+  <div className="relative overflow-hidden rounded-lg shadow-lg group transition-transform duration-300 hover:scale-105 ">
     <img 
-      src={workshop.image} 
-      alt={workshop.title} 
-      className="w-full h-80 object-cover transition-all duration-300 group-hover:blur-sm"
+      src={item.image} 
+      alt={item.title} 
+      className="w-full h-64 sm:h-56 md:h-64 lg:h-72 object-cover transition-all duration-300 group-hover:scale-110"
     />
-    <div className="absolute inset-0 flex flex-col justify-center items-center p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      <h3 className="text-xl font-bold text-white mb-2">{workshop.title}</h3>
-      <p className="text-sm text-white text-justified">{workshop.description}</p>
-      <p className="text-sm font-bold text-white mt-2">{workshop.date}</p>
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+        <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">{item.title}</h3>
+        <p className="text-xs sm:text-sm mb-1 sm:mb-2 ">{item.description}</p>
+        <p className="text-xs sm:text-sm font-bold">{item.date}</p>
+      </div>
     </div>
   </div>
 );
-WorkshopCard.propTypes = {
-  workshop: PropTypes.shape({
+
+Card.propTypes = {
+  item: PropTypes.shape({
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
   }).isRequired,
+  type: PropTypes.oneOf(['event', 'workshop']).isRequired,
 };
 
-const Workshop = () => {
-  return (
-    <section className="min-h-screen py-24 ">
-      <div className="container mx-auto px-2">
-        <h2 className=" section-title mb-12">Workshops and Webinars</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 p-8">
-          {workshop.map(workshop => (
-            <WorkshopCard key={workshop.id} workshop={workshop} />
-          ))}
-        </div>
+const Section = ({ title, items, type }) => (
+  <section className="py-12 sm:py-16 md:py-20 lg:py-24">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">{title}</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mx-8">
+        {items.map(item => (
+          <Card key={item.id} item={item} type={type} />
+        ))}
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
+  type: PropTypes.oneOf(['event', 'workshop']).isRequired,
 };
+
 const Event = () => {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth'});
-  },[]);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <main>
-      <Events />
-      <Workshop />
+      <Section title="Events" items={events} type="event" />
+      <Section title="Workshops and Webinars" items={workshop} type="workshop" />
     </main>
   );
 };
