@@ -2,12 +2,12 @@ import React, { useRef, useEffect } from 'react';
 import { TESTIMONIALS } from '../constants';
 
 const TestimonialCard = ({ testimonial }) => (
-  <div className="flex-shrink-0 w-[250px] sm:w-[300px] md:w-[400px] bg-white shadow-lg rounded-xl p-6 mx-4 transition-all duration-300 hover:shadow-2xl">
+  <div className="flex-shrink-0 w-[250px] sm:w-[300px] md:w-[400px] bg-white shadow-lg rounded-2xl p-8 mx-4 transition-all duration-300 hover:shadow-2xl">
     <div className="flex items-center mb-4">
       <img
         src={testimonial.imageSrc}
         alt={testimonial.name}
-        className="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full mr-4 object-cover"
+        className="h-[72px] w-[72px] rounded-full mr-4 object-cover"
       />
       <div>
         <h3 className="font-semibold text-sm sm:text-base md:text-lg">{testimonial.name}</h3>
