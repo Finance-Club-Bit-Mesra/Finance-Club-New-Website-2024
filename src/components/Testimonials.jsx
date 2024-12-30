@@ -56,7 +56,7 @@ const Testimonials = () => {
         Providing financial knowledge and resources to help students excel in the financial world.
         </p>
 
-        <div className="relative h-[34rem] flex items-center justify-center overflow-hidden">
+        <div className="relative md:h-[36rem] h-[48rem] flex items-center justify-center overflow-hidden ">
           <AnimatePresence initial={false} mode="wait">
             <motion.div
               key={currentIndex}
@@ -67,9 +67,9 @@ const Testimonials = () => {
               style={{ position: "absolute", width: "100%", maxWidth: "800px" }}
             >
               {/* Card */}
-              <div className="bg-white rounded-2xl shadow-lg p-8  transform-gpu hover:shadow-2xl hover:scale-[1.01] transition-all duration-500 ease-in-out">
+              <div className="bg-white rounded-2xl shadow-lg p-8  transform-gpu hover:shadow-2xl hover:scale-[0.99] transition-all duration-500 ease-in-out">
                 <div className="max-w-3xl mx-auto text-center">
-                  <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
+                  <p className="text-base text-gray-800 mb-8 leading-relaxed">
                     {testimonialData[currentIndex].text}
                   </p>
                   <div className="flex flex-col items-center">
@@ -80,10 +80,10 @@ const Testimonials = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900">
+                    <h3 className="text-lg font-semibold text-gray-900">
                       {testimonialData[currentIndex].name}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm">
                       {testimonialData[currentIndex].username}
                     </p>
                   </div>
