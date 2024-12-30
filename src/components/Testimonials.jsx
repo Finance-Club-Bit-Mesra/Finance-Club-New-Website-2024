@@ -1,91 +1,128 @@
-import React, { useRef, useEffect } from 'react';
-import { TESTIMONIALS } from '../constants';
-
-const TestimonialCard = ({ testimonial }) => (
-  <div className="flex-shrink-0 w-[250px] sm:w-[300px] md:w-[400px] bg-white shadow-lg rounded-2xl p-8 mx-4 transition-all duration-300 hover:shadow-2xl">
-    <div className="flex items-center mb-4">
-      <img
-        src={testimonial.imageSrc}
-        alt={testimonial.name}
-        className="h-[72px] w-[72px] rounded-full mr-4 object-cover"
-      />
-      <div>
-        <h3 className="font-semibold text-sm sm:text-base md:text-lg">{testimonial.name}</h3>
-        <p className="text-xs sm:text-sm text-gray-600">{testimonial.username}</p>
-      </div>
-    </div>
-    <p className="text-gray-700 text-xs sm:text-sm md:text-base">{testimonial.text}</p>
-  </div>
-);
-
-const TestimonialsRow = ({ testimonials, direction }) => {
-  const rowRef = useRef(null);
-
-  useEffect(() => {
-    const row = rowRef.current;
-    if (!row) return;
-
-    const scrollRow = () => {
-      if (direction === 'left') {
-        if (row.scrollLeft >= row.scrollWidth / 2) {
-          row.scrollLeft = 0;
-        } else {
-          row.scrollLeft += 1;
-        }
-      } else {
-        if (row.scrollLeft <= 0) {
-          row.scrollLeft = row.scrollWidth / 2;
-        } else {
-          row.scrollLeft -= 1;
-        }
-      }
-    };
-
-    const intervalId = setInterval(scrollRow, 40);
-
-    return () => clearInterval(intervalId);
-  }, [direction]);
-
-  return (
-    <div
-      ref={rowRef}
-      className="flex overflow-hidden pb-12"
-      style={{ scrollBehavior: 'auto' }}
-    >
-      {[...testimonials, ...testimonials].map((testimonial, index) => (
-        <TestimonialCard key={index} testimonial={testimonial} />
-      ))}
-    </div>
-  );
-};
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { TESTIMONIALS } from '../constants'; 
 
 const Testimonials = () => {
-  const testimonials = TESTIMONIALS.items;
-  const midPoint = Math.ceil(testimonials.length / 2);
-  const firstRow = testimonials.slice(0, midPoint);
-  const secondRow = testimonials.slice(0, midPoint).reverse();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const testimonialData = TESTIMONIALS.items;
+  const totalTestimonials = testimonialData.length;
+
+  useEffect(() => {
+    let intervalId;
+
+    if (isAutoPlaying) {
+      intervalId = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % totalTestimonials);
+      }, 4000);
+    }
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [isAutoPlaying, totalTestimonials]);
+
+  const resetAutoPlay = () => {
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 3000);
+  };
+
+  const handleNext = () => {
+    resetAutoPlay();
+    setCurrentIndex((prev) => (prev + 1) % totalTestimonials);
+  };
+
+  const handlePrevious = () => {
+    resetAutoPlay();
+    setCurrentIndex((prev) => (prev - 1 + totalTestimonials) % totalTestimonials);
+  };
+
+  const goToSlide = (index) => {
+    resetAutoPlay();
+    setCurrentIndex(index);
+  };
 
   return (
-    <section className="pt-24 pb-12 px-4 overflow-hidden" id="testimonials">
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="section-title mb-6">Testimonials</h2>
-          <p className="section-description max-w-2xl mx-auto">
-          Providing financial knowledge and resources to help students excel in the financial world.
-          </p>
-        </div>
-        <div className="relative">
-          <div className="overflow-hidden">
-            <TestimonialsRow testimonials={firstRow} direction="left" />
+    <div className="container mx-auto  py-24 px-4" id='testimonials'>
+      <div className="max-w-6xl mx-auto">
+        <h1 className="section-title text-center mb-5">
+          Testimonials
+        </h1>
+        <p className='section-description max-w-2xl mx-auto'>
+        Providing financial knowledge and resources to help students excel in the financial world.
+        </p>
+
+        <div className="relative h-[34rem] flex items-center justify-center overflow-hidden">
+          <AnimatePresence initial={false} mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              style={{ position: "absolute", width: "100%", maxWidth: "800px" }}
+            >
+              {/* Card */}
+              <div className="bg-white rounded-2xl shadow-lg p-8  transform-gpu hover:shadow-2xl hover:scale-[1.01] transition-all duration-500 ease-in-out">
+                <div className="max-w-3xl mx-auto text-center">
+                  <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
+                    {testimonialData[currentIndex].text}
+                  </p>
+                  <div className="flex flex-col items-center">
+                    <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                      <img
+                        src={testimonialData[currentIndex].imageSrc}
+                        alt={testimonialData[currentIndex].name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {testimonialData[currentIndex].name}
+                    </h3>
+                    <p className="text-gray-600">
+                      {testimonialData[currentIndex].username}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          <button
+            onClick={handlePrevious}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 rounded-full p-3 shadow-lg hover:bg-white transition-colors z-10"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-700" />
+          </button>
+
+          <button
+            onClick={handleNext}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 rounded-full p-3 shadow-lg hover:bg-white transition-colors z-10"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight className="w-6 h-6 text-gray-700" />
+          </button>
+          {/* niche wala nav */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-2">
+            {testimonialData.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  index === currentIndex ? "bg-gray-700" : "bg-gray-300"
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
           </div>
-          <div className="overflow-hidden">
-            <TestimonialsRow testimonials={secondRow} direction="right" />
-          </div>
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-fcbluelight to-transparent z-10"></div>
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-fcbluelight to-transparent z-10"></div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
