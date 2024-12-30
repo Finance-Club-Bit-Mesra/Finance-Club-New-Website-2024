@@ -50,7 +50,7 @@ const Contact = () => {
   
   return (
     <section
-      className="py-20 bg-gradient-to-b from-fcbluelight via-fcblue to-[#0e91e9]"
+      className="py-24 bg-gradient-to-b from-fcbluelight via-fcblue to-[#0e91e9]"
       id="contact"
     >
       <div className="container mx-auto px-8">

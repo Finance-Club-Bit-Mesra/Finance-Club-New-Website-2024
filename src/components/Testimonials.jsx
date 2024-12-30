@@ -66,7 +66,7 @@ const Testimonials = () => {
   const secondRow = testimonials.slice(0, midPoint).reverse();
 
   return (
-    <section className="py-20 px-4 overflow-hidden" id="testimonials">
+    <section className="pt-24 pb-12 px-4 overflow-hidden" id="testimonials">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-6">Testimonials</h2>
