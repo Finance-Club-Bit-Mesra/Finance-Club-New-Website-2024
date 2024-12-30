@@ -1,85 +1,88 @@
-import { twMerge } from 'tailwind-merge';
-import { motion } from 'framer-motion';
-import React from 'react';
-import PropTypes from 'prop-types';
-import { TESTIMONIALS } from '../constants';  
+import React, { useRef, useEffect } from 'react';
+import { TESTIMONIALS } from '../constants';
 
-const testimonials = TESTIMONIALS.items;
-const firstColumn = testimonials.slice(0, 3);
-const secondColumn = testimonials.slice(3, 6);
+const TestimonialCard = ({ testimonial }) => (
+  <div className="flex-shrink-0 w-[250px] sm:w-[300px] md:w-[400px] bg-white shadow-lg rounded-xl p-6 mx-4 transition-all duration-300 hover:shadow-2xl">
+    <div className="flex items-center mb-4">
+      <img
+        src={testimonial.imageSrc}
+        alt={testimonial.name}
+        className="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full mr-4 object-cover"
+      />
+      <div>
+        <h3 className="font-semibold text-sm sm:text-base md:text-lg">{testimonial.name}</h3>
+        <p className="text-xs sm:text-sm text-gray-600">{testimonial.username}</p>
+      </div>
+    </div>
+    <p className="text-gray-700 text-xs sm:text-sm md:text-base">{testimonial.text}</p>
+  </div>
+);
 
-const TestimonialsColumn = ({ testimonials, duration, className }) => {
+const TestimonialsRow = ({ testimonials, direction }) => {
+  const rowRef = useRef(null);
+
+  useEffect(() => {
+    const row = rowRef.current;
+    if (!row) return;
+
+    const scrollRow = () => {
+      if (direction === 'left') {
+        if (row.scrollLeft >= row.scrollWidth / 2) {
+          row.scrollLeft = 0;
+        } else {
+          row.scrollLeft += 1;
+        }
+      } else {
+        if (row.scrollLeft <= 0) {
+          row.scrollLeft = row.scrollWidth / 2;
+        } else {
+          row.scrollLeft -= 1;
+        }
+      }
+    };
+
+    const intervalId = setInterval(scrollRow, 40);
+
+    return () => clearInterval(intervalId);
+  }, [direction]);
+
   return (
-    <div className={className}>
-      <motion.div
-        animate={{ translateY: '-50%' }}
-        transition={{
-          duration: duration || 10,
-          repeat: Infinity,
-          ease: 'linear',
-          repeatType: 'loop',
-        }}
-        className={twMerge('flex flex-col pt-10', className)}
-      >
-        {[...new Array(4)].fill(0).map((_, index) => (
-          <React.Fragment key={index}>
-            {testimonials.map(({ text, imageSrc, name, username }) => (
-              <div key={imageSrc} className="card my-5 bg-white shadow-md">
-                <div className="flex flex-col items-center gap-2 mt-5">
-                  <img
-                    src={imageSrc}
-                    alt={name}
-                    width={80}
-                    height={80}
-                    className="h-16 w-16 rounded-full mr-4 "
-                  />
-                  <div className="flex flex-col">
-                    <div className="font-semibold md:text-lg sm:text-sm tracking-tight leading-5">
-                      {name}
-                    </div>
-                    <div className="md:text-md sm:text-sm leading-5 tracking-tight mx-auto">{username}</div>
-                  </div>
-                </div>
-                <div className="my-5 text-md">{text}</div>
-              </div>
-            ))}
-          </React.Fragment>
-        ))}
-      </motion.div>
+    <div
+      ref={rowRef}
+      className="flex overflow-hidden pb-12"
+      style={{ scrollBehavior: 'auto' }}
+    >
+      {[...testimonials, ...testimonials].map((testimonial, index) => (
+        <TestimonialCard key={index} testimonial={testimonial} />
+      ))}
     </div>
   );
 };
 
-TestimonialsColumn.propTypes = {
-  testimonials: PropTypes.arrayOf(
-    PropTypes.shape({
-      text: PropTypes.string.isRequired,
-      imageSrc: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      username: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  duration: PropTypes.number,
-  className: PropTypes.string,
-};
-
 const Testimonials = () => {
+  const testimonials = TESTIMONIALS.items;
+  const midPoint = Math.ceil(testimonials.length / 2);
+  const firstRow = testimonials.slice(0, midPoint);
+  const secondRow = testimonials.slice(0, midPoint).reverse();
+
   return (
-    <section className="py-16 px-8" id="testimonials">
+    <section className="py-20 px-4 overflow-hidden" id="testimonials">
       <div className="container mx-auto">
-        <div className="section-heading">
-          <h2 className="section-title mt-5">Testimonials</h2>
-          <p className="section-description mt-5">
-            Providing financial knowledge and resources to help students excel in the financial world.
+        <div className="text-center mb-16">
+          <h2 className="section-title mb-6">Testimonials</h2>
+          <p className="section-description max-w-2xl mx-auto">
+          Providing financial knowledge and resources to help students excel in the financial world.
           </p>
         </div>
-        <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
-          <TestimonialsColumn testimonials={firstColumn} duration={50} className="hidden md:block" />
-          <TestimonialsColumn
-            testimonials={secondColumn}
-            className="block"
-            duration={75}
-          />
+        <div className="relative">
+          <div className="overflow-hidden">
+            <TestimonialsRow testimonials={firstRow} direction="left" />
+          </div>
+          <div className="overflow-hidden">
+            <TestimonialsRow testimonials={secondRow} direction="right" />
+          </div>
+          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-fcbluelight to-transparent z-10"></div>
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-fcbluelight to-transparent z-10"></div>
         </div>
       </div>
     </section>
