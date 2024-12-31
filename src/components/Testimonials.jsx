@@ -6,6 +6,7 @@ import { TESTIMONIALS } from '../constants';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [direction, setDirection] = useState(1); // 1 for right, -1 for left
 
   const testimonialData = TESTIMONIALS.items;
   const totalTestimonials = testimonialData.length;
@@ -15,6 +16,7 @@ const Testimonials = () => {
 
     if (isAutoPlaying) {
       intervalId = setInterval(() => {
+        setDirection(1); // Default to right for autoplay
         setCurrentIndex((prev) => (prev + 1) % totalTestimonials);
       }, 4000);
     }
@@ -33,41 +35,44 @@ const Testimonials = () => {
 
   const handleNext = () => {
     resetAutoPlay();
+    setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % totalTestimonials);
   };
 
   const handlePrevious = () => {
     resetAutoPlay();
+    setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + totalTestimonials) % totalTestimonials);
   };
 
   const goToSlide = (index) => {
     resetAutoPlay();
+    setDirection(index > currentIndex ? 1 : -1);
     setCurrentIndex(index);
   };
 
   return (
-    <div className="container mx-auto  py-24 px-4" id='testimonials'>
+    <div className="container mx-auto py-24 px-4" id='testimonials'>
       <div className="max-w-6xl mx-auto">
         <h1 className="section-title text-center mb-5">
           Testimonials
         </h1>
         <p className='section-description max-w-2xl mx-auto'>
-        Providing financial knowledge and resources to help students excel in the financial world.
+          Providing financial knowledge and resources to help students excel in the financial world.
         </p>
 
-        <div className="relative md:h-[36rem] h-[48rem] flex items-center justify-center overflow-hidden ">
+        <div className="relative md:h-[36rem] h-[48rem] flex items-center justify-center overflow-hidden">
           <AnimatePresence initial={false} mode="wait">
             <motion.div
               key={currentIndex}
-              initial={{ opacity: 0, x: 100 }}
+              initial={{ opacity: 0, x: direction > 0 ? 100 : -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
+              exit={{ opacity: 0, x: direction > 0 ? -100 : 100 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
               style={{ position: "absolute", width: "100%", maxWidth: "800px" }}
             >
               {/* Card */}
-              <div className="bg-white rounded-2xl shadow-lg p-8  transform-gpu hover:shadow-2xl hover:scale-[0.99] transition-all duration-500 ease-in-out">
+              <div className="bg-white rounded-2xl shadow-lg p-8 transform-gpu hover:shadow-2xl hover:scale-[0.99] transition-all duration-500 ease-in-out">
                 <div className="max-w-3xl mx-auto text-center">
                   <p className="text-base text-gray-800 mb-8 leading-relaxed">
                     {testimonialData[currentIndex].text}
@@ -107,7 +112,8 @@ const Testimonials = () => {
           >
             <ChevronRight className="w-6 h-6 text-gray-700" />
           </button>
-          {/* niche wala nav */}
+
+          {/* Dot Navigation */}
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-2">
             {testimonialData.map((_, index) => (
               <button
