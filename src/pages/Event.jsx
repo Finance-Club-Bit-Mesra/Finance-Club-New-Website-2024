@@ -15,6 +15,11 @@ import bitnishan from "../assets/events/bitnishan.jpg";
 import cfa from "../assets/workshop/cfa.jpg";
 import virendra from "../assets/workshop/virendra.jpg";
 import zerodha from "../assets/workshop/zerodha.jpg";
+import manya from "../assets/workshop/manya.jpg";
+import shahnawaz from "../assets/workshop/shahnawaz.jpeg";
+import khushi from "../assets/workshop/khushi.jpeg";
+import kar from "../assets/workshop/kar.jpeg";
+import abhishek from "../assets/workshop/abhishek.jpeg";
 
 const events = [
   {
@@ -114,29 +119,64 @@ const workshop = [
   },
   {
     id: 2,
-    title: "Webinar on CFA Program",
+    title: "Webinar on Career Opportunities in Financial Services and Investment Management",
     description:
-      "Whether you're looking to master investment management or unlock global job prospects, this webinar will showcase the transformative power of the CFA designation.",
+      "Explore diverse career paths in the financial services and investment management sectors with experts Sayan Banerjee and Saim Fakih. Gain insights into the industry and shape your future in finance. Organized in collaboration with the CFA Institute.",
     date: "27th September",
     image: cfa,
   },
   {
     id: 3,
-    title: "Exclusive Investment Lessons",
-    description: "Learn the strategies, discipline, and insights required to navigate the complexities of the market from a professional who has seen it all.",
-    date: "December & January",
+    title: "Exclusive Investment Lessons with Mr. Virendra Verma",
+    description: "Learn the strategies, discipline, and insights required to navigate the complexities of the market from Mr. Virendra Verma who has seen it all.",
+    date: "19th January",
     image: virendra,
+  },
+  {
+    id: 4,
+    title: "Webinar on Data Analytics and Its Impact on Financial Processes",
+    description:"Join Ms. Manya Gaurav for an insightful webinar exploring the transformative role of data analytics in financial processes and reporting. Discover how analytics drives informed decisions and enhances financial strategies.",
+    date: "20th August",
+    image: manya,
+  },
+  {
+    id: 5,
+    title: "Exploring Blockchain and DeFi with Shahnawaz Khan",
+    description: "Join us for an engaging session with Shahnawaz Khan, a developer and advocate in blockchain technology, NFTs, DeFi, real-world asset tokenization, and AntelopeDAO. Gain insights into the transformative potential of decentralized finance and emerging tech trends.",
+    date: "21st January",
+    image: shahnawaz,
+  },
+  {
+    id: 6,
+    title: "Entrepreneurship and Innovation with Abhishek Sagar",
+    description: "Join us for an interactive session with Abhishek Sagar, Founder and CEO of ZuraVerse, as he shares his entrepreneurial journey and insights on innovation, creativity, and building a successful venture.",
+    date: "19th January",
+    image: abhishek,
+  },
+  {
+    id: 7,
+    title: "Entrepreneurship and Business Strategy with Khushi Panjwani",
+    description: "Join us for an exclusive event with Khushi Panjwani, a celebrated Entrepreneur (40 Under 40), Trader, TEDx Speaker, Shark Tank India S3 participant, World Record Holder, and Author. Gain invaluable insights into her journey and expertise",
+    date: "19th January",
+    image: khushi,
+  },
+  {
+    id: 8,
+    title: "Exclusive Session with Abhishek Kar: Business Strategies Unveiled",
+    description: "Join the Finance Club at BIT Mesra for an insightful session with Abhishek Kar, a renowned YouTuber (5M+ followers), business strategist, investor, and stock trader.",
+    date: "20th January",
+    image: kar,
   },
 ];
 
 const Card = ({ item, type }) => (
-  <div className="relative overflow-hidden rounded-lg shadow-lg group transition-transform duration-300 hover:scale-105 ">
+  <div className="relative overflow-hidden rounded-lg shadow-lg group transition-transform duration-300 hover:scale-105 h-fit">
     <img 
       src={item.image} 
       alt={item.title} 
-      className="w-full h-64 sm:h-56 md:h-64 lg:h-72 object-cover transition-all duration-300 group-hover:scale-110"
+      className="w-full md:h-80 transition-all duration-300 group-hover:scale-110"
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm">
       <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
         <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">{item.title}</h3>
         <p className="text-xs sm:text-sm mb-1 sm:mb-2 ">{item.description}</p>
@@ -160,7 +200,7 @@ const Section = ({ title, items, type }) => (
   <section className="py-24">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-center mb-8 sm:mb-12 section-title">{title}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mx-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-8">
         {items.map(item => (
           <Card key={item.id} item={item} type={type} />
         ))}

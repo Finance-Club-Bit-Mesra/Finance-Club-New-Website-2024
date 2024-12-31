@@ -2,9 +2,7 @@ import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import abhishek from '../assets/speakers/abhishek.webp'
 import abhizura from '../assets/speakers/abhizura.jpeg'
-import adyas from '../assets/speakers/adyas.jpeg'
-import kapilm from '../assets/speakers/kapilm.jpeg'
-import nishant from '../assets/speakers/nishant.jpeg'
+import shahnawaz from '../assets/speakers/shahnawaz.jpeg'
 import virendra from '../assets/speakers/virendra.jpeg'
 import khushi from '../assets/speakers/khushi.jpeg'
 const Speaker = () => {
@@ -20,21 +18,6 @@ const Speaker = () => {
       image: abhizura,
     },
     {
-      name: "Adyas Gupta",
-      role: "Reseach Analyst Deloitte US-India",
-      image: adyas,
-    },
-    {
-      name: "Kapil Mishra",
-      role: "Founder Finlatics",
-      image: kapilm,
-    },
-    {
-      name: "Nishant Choudhary",
-      role: "Founder & Ceo, Nishant Choudhary",
-      image: nishant,
-    },
-    {
       name: "Virendra Verma",
       role: "Trader Portfolio Manager, Expert in Capital Market",
       image: virendra,
@@ -44,9 +27,14 @@ const Speaker = () => {
       role: "Entrepreneur 40 U 40, TedX Speaker, Author, Shark Tank India S-3, World Record Holder",
       image: khushi,
     },
+    {
+      name: "Shahnawaz Khan",
+      role: "Full Stack Blockchain Developer, Senior Manager E-Cell IIITR, Web3.0 Builder, Tokenization, Digital Assets & RWA",
+      image: shahnawaz,
+    },
   ]
 
-  // Duplicate speakers array for infinite scroll effect
+
   const allSpeakers = [...speakers, ...speakers, ...speakers]
   
   const scrollRef = useRef(null)

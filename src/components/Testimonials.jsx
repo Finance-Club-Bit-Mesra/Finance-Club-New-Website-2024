@@ -18,7 +18,7 @@ const Testimonials = () => {
       intervalId = setInterval(() => {
         setDirection(1); // Default to right for autoplay
         setCurrentIndex((prev) => (prev + 1) % totalTestimonials);
-      }, 4000);
+      }, 5000);
     }
 
     return () => {
@@ -30,7 +30,7 @@ const Testimonials = () => {
 
   const resetAutoPlay = () => {
     setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 3000);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
   };
 
   const handleNext = () => {
