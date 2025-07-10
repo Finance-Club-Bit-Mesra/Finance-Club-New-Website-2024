@@ -51,8 +51,6 @@ import prachi from "../assets/Teamfc/Prachi.webp";
 import aanchal from "../assets/Teamfc/Aanchal.webp";
 import gourab from "../assets/Teamfc/Gourab.webp";
 
-
-
 export const teamData = [
   {
     title: "Faculty Advisor",
@@ -68,291 +66,400 @@ export const teamData = [
     title: "Executive Team",
     members: [
       {
-        name: "Aalok Praveen",
-        position: "President",
-        image: aalok,
-        linkedin: "https://www.linkedin.com/in/robinaalok",
-      },
-      {
-        name: "Lakshya Saini",
-        position: "Joint-President",
-        image: Lakshya,
-        linkedin: "https://www.linkedin.com/in/lakshya-saini-a56785145/",
-        instagram:
-          "https://instagram.com/lakshya.saini_19?igshid=NGExMmI2YTkyZg==",
-      },
-      {
-        name: "Ansh Raj",
-        position: "Joint-President",
-        image: ansh,
-        linkedin: "https://www.linkedin.com/in/ansh-raj-927b39233",
-        instagram: "https://instagram.com/_ans.shh_?igshid=MmIzYWVlNDQ5Yg==",
-      },
-      {
-        name: "Shubham Agarwal",
-        position: "Joint-President",
-        image: shubhagr,
-        linkedin: "https://www.linkedin.com/in/shubham-agrawal-87842b22b",
-        facebook: "https://www.facebook.com/profile.php?id=100084721501713",
-        instagram: "",
-      },
-      {
-        name: "Rishika Kumari",
-        position: "Vice-President",
-        image: rishika,
-        linkedin: "https://www.linkedin.com/in/rishika-kumari-a17b4123",
-        instagram: "https://instagram.com/rishika.22?igshid=NTc4MTiIwNjQ2YQ==",
-      },
-      {
-        name: "Anupam Nilav",
-        position: "Vice-President",
-        image: anupamnilav,
-        linkedin: "https://www.linkedin.com/in/anupam-nilav-722a94260/",
-        twitter:
-          "https://twitter.com/AnupamNilav?t=vBkEjIgUI7ZIGZM89eJNeQ&s=09",
-        instagram: "https://instagram.com/nilavanupam?igshid=MzNlNGNkZWQ4Mg==",
-      },
-      {
-        name: "Shreyansh",
-        position: "Vice-President",
-        image: shreyansh,
-        instagram:
-          "https://instagram.com/shreyansh_.o_o._?igshid=ZDc4ODBmNjlmNQ==",
-      },
-      {
-        name: "Deevesh Mishra",
-        position: "General Secretary",
-        image: deevesh,
-        facebook: "https://www.facebook.com/profile.php?id=100009199312377",
-        instagram: "https://www.instagram.com/deeveshmishra/",
-      },
-      {
         name: "Ronit Jain",
-        position: "General Secretary",
-        image: ronit, 
-        linkedin:"https://www.linkedin.com/in/ronit-jain-b20b9b30a/",
-        instagram:"https://www.instagram.com/learner_rsj_/",
+        position: "President",
+        image: ronit,
+        linkedin: "https://www.linkedin.com/in/ronit-jain-b20b9b30a/",
+        instagram: "https://www.instagram.com/learner_rsj_/",
       },
       {
-        name: "Riya Sharma",
-        position: "Joint Secretary",
-        image: riya,
-        linkedin: "https://www.linkedin.com/in/riya-sharma-682985261/",
-        instagram:"https://www.instagram.com/rish6.79/",
+        name: "Prachi",
+        position: "Joint President",
+        image: prachi,
       },
       {
-        name: "Ayush Singh Rajput",
-        position: "Joint Secretary",
-        image: ayush,
-        linkedin: "https://www.linkedin.com/in/ayush-singh-rajput-0700b8165/",
-      },
-      {
-        name: "Ritik Raj",
-        position: "Director",
-        image: ritik,
-      },
-      {
-        name: "Harsh Singh",
-        position: "Director",
-        image: harsh,
-        linkedin: "https://www.linkedin.com/in/harsh-singh-a7b490255/",
-        instagram: "https://www.instagram.com/with_harshsingh/",
-      },
-      {
-        name: "Rishabh Sinha",
-        position: "Director",
-        image: rishabh,
-        linkedin: "https://www.linkedin.com/in/rishabh-sinha-94347a25a/",
-      },
-      {
-        name: "Shreyans Jain",
-        position: "Treasurer",
-        image: shreyans,
-        instagram:"https://www.instagram.com/_shreyans7/",
-      },
-      {
-        name: "Ankit Verma",
-        position: "Joint Treasurer",
-        image: ankit,
-        linkedin: "https://www.linkedin.com/in/ankitverma2405/",
-      },
-    ],
-  },
-  {
-    title: "Web Team",
-    members: [
-      {
-        name: "Harshit Prandiyal",
-        position: "Vice-President",
-        image: harshit,
-      },
-      {
-        name: "Shubham Priyanshu",
-        position: "Vice-President",
-        image: shubham,
-        linkedin: "https://www.linkedin.com/in/shubham-priyanshu-035b25215/",
-        instagram: "https://www.instagram.com/shubhu_10_/",
-      },
-      {
-        name: "Ashutosh Mishra",
-        position: "Web Master Head",
-        image: ashutosh,
-      },
-      {
-        name: "Deepak Pradhan",
-        position: "Web Master Head",
-        image: deepak,
-      },
-    ],
-  },
-  {
-    title: "Content Team",
-    members: [
-      {
-        name: "Harsh Raj",
-        position: "Vice-President",
-        image: harshraj,
+        name: "Gourab Mahato",
+        position: "Joint President",
+        image: gourab,
       },
       {
         name: "Aditi Dey",
-        position: "Content Head",
+        position: "Vice President",
         image: aditi,
         facebook: "https://www.facebook.com/profile.php?id=100075476906773",
         instagram: "https://www.instagram.com/warishpratap/",
         linkedin: "https://www.linkedin.com/in/warish-pratap-sinha-45a61a229/",
       },
       {
-        name: "Harshvardhan Singh",
-        position: "Content Head",
-        image: harshvardhan,
-        facebook: "https://www.facebook.com/profile.php?id=100075476906773",
-        instagram: "https://www.instagram.com/warishpratap/",
-        linkedin: "https://www.linkedin.com/in/warish-pratap-sinha-45a61a229/",
+        name: "Harsh Singh",
+        position: "Vice President",
+        image: harsh,
+        linkedin: "https://www.linkedin.com/in/harsh-singh-a7b490255/",
+        instagram: "https://www.instagram.com/with_harshsingh/",
       },
       {
-        name: "Divya Priyadarshini",
+        name: "Rishabh Sinha",
+        position: "Vice President",
+        image: rishabh,
+        linkedin: "https://www.linkedin.com/in/rishabh-sinha-94347a25a/",
+      },
+      {
+        name: "Deepak Pradhan",
+        position: "Vice President",
+        image: deepak,
+      },
+      {
+        name: "Pushkar Kumar",
+        position: "General Secretary",
+        // image: pushkar,
+        linkedin: "https://www.linkedin.com/in/pushkar-kumar-66309822a/",
+        instagram: "https://www.instagram.com/pushkar_k172/",
+      },
+      {
+        name: "Yash Paliwal",
+        position: "General Secretary",
+        // image: yash,
+        instagram: "https://www.instagram.com/yashhhh___1105/",
+      },
+      {
+        name: "Priyanka Singh",
+        position: "Joint Secretary",
+        // image: priyanka,
+        linkedin: "https://www.linkedin.com/in/priyanka-singh-29b452295/",
+        instagram: "https://www.instagram.com/_singhpriyanka12/",
+      },
+      {
+        name: "Piyush Pratap Singh",
+        position: "Joint Secretary",
+        // image: piyushPratap,
+        linkedin:
+          "https://www.linkedin.com/in/pps-bitmesra-k23/overlay/background-image/",
+        instagram: "https://www.instagram.com/piyush.p.s/",
+      },
+      {
+        name: "Abhinav Anand",
+        position: "Director",
+        // image: harsh,
+        instagram: "https://www.instagram.com/abhinav_ai333/",
+      },
+      {
+        name: "Samyak Jain",
+        position: "Director",
+        // image: ritik,
+        instagram: "https://www.instagram.com/__samyakjain.__/",
+        linkedin: "https://www.linkedin.com/in/samyak-jain-6266992504-/",
+      },
+      {
+        name: "Shruti Kumari",
+        position: "Director",
+        // image: rishabh,
+        linkedin: "https://www.linkedin.com/in/shruti-kumari-627198298/",
+        instagram: "https://www.instagram.com/oddly_typical/",
+      },
+      {
+        name: "Vaibhav Bahal",
+        position: "Trading & Investment Director",
+        // image: vaibhav,
+        linkedin: "https://www.linkedin.com/in/vaibhav-bahal-24031b32b/",
+        instagram: "https://www.instagram.com/vaibhavbahal_/",
+      },
+      {
+        name: "Pratik Singh",
+        position: "Treasurer",
+        // image: pratik,
+        linkedin: "https://www.linkedin.com/in/pratik-singh-bb3859316/",
+        instagram: "https://www.instagram.com/_pratik_singh_31/",
+      },
+      {
+        name: "Rakshit Jha",
+        position: "Joint Treasurer",
+        // image: rakshit,
+        linkedin: "https://www.linkedin.com/in/rakshit-jha-7a75382a6/",
+      },
+      {
+        name: "Shreya",
+        position: "Joint Treasurer",
+        // image: shreya,
+        // linkedin: "https://www.linkedin.com/in/rakshit-jha-7a75382a6/", can'nt find linkedin or insta
+      },
+      {
+        name: "Ashish Ranjan",
+        position: "Executive Member",
+        // image:
+        linkedin: "https://www.linkedin.com/in/ashish-ranjan-b39b45298/",
+      },
+      {
+        name: "Hardik",
+        position: "Executive Member",
+        // image:
+        linkedin: "https://www.linkedin.com/in/hardik-khalkho-16a19a2a8/",
+      },
+      {
+        name: "Rahul Bharti",
+        position: "Executive Member",
+        // image:
+        linkedin: "https://www.linkedin.com/in/rahul-bharti-757173276/",
+      },
+      {
+        name: "Nihal Srivastava",
+        position: "PG Executive Member",
+        // image:
+        linkedin: "https://www.linkedin.com/in/nihal-srivastava-a63060167/",
+      },
+      {
+        name: "Shirish Mishra",
+        position: "PG Executive Member",
+        // image:
+      },
+      {
+        name: "Gautam Kumar",
+        position: "PG Executive Member",
+        // image:
+        linkedin: "https://www.linkedin.com/in/gautam-kumar-075b39224/",
+      },
+      {
+        name: "Shrishti Tiwri",
+        position: "PG Executive Member",
+        // image:
+      },
+    ],
+  },
+  {
+    title: "Web Team",
+    members: [
+      // {
+      //   name: "Harshit Prandiyal",
+      //   position: "Vice-President",
+      //   image: harshit,
+      // },
+      // {
+      //   name: "Shubham Priyanshu",
+      //   position: "Vice-President",
+      //   image: shubham,
+      //   linkedin: "https://www.linkedin.com/in/shubham-priyanshu-035b25215/",
+      //   instagram: "https://www.instagram.com/shubhu_10_/",
+      // },
+      {
+        name: "Ankit Verma",
+        position: "Web Head",
+        // image: ,
+        linkedin: "https://www.linkedin.com/in/ankitverma2405/",
+      },
+      {
+        name: "Vaibhav Raj",
+        position: "Web Master",
+        // image: ashutosh,
+      },
+      {
+        name: "Shubh Raj",
+        position: "Web Master",
+        // image: deepak,
+      },
+    ],
+  },
+  {
+    title: "Content Team",
+    members: [
+      // {
+      //   name: "Harsh Raj",
+      //   position: "Vice-President",
+      //   image: harshraj,
+      // },
+      {
+        name: "Harsh Verma",
+        position: "Media Head",
+        image: harshV,
+      },
+      {
+        name: "Divya",
         position: "Content Head",
         image: divya,
+        linkedin: "https://www.linkedin.com/in/divya-priyadarshini/",
+      },
+      {
+        name: "Shrishti Mishra",
+        position: "Content Lead",
+        // image: harshvardhan,
+        instagram: "https://www.instagram.com/shrishti__3304/",
+        linkedin: "https://www.linkedin.com/in/shrishti-mishra-05454b31a/",
+      },
+      {
+        name: "Harish Roy",
+        position: "Content Lead",
+        // image: divya,
+        instagram: "https://www.instagram.com/harishroyroy/",
+      },
+    ],
+  },
+  {
+    title: "Outreach Team",
+    members: [
+      {
+        name: "Arpita Sinha",
+        position: "Outreach Head",
+        image: arpita,
+      },
+      {
+        name: "Aditya Agarwal",
+        position: "Outreach Lead",
+        // image: harshvardhan,
+        instagram: "https://www.instagram.com/adiagarwal_2905/",
+      },
+      {
+        name: "Daksh Kweera",
+        position: "Outreach Lead",
+        // image: harshvardhan,
+        linkedin: "https://www.linkedin.com/in/daksh-kweera-2008aa289/",
+      },
+      {
+        name: "Sneha Mukherjee",
+        position: "Social Media Lead",
+        // image: ,
+        linkedin: "https://www.linkedin.com/in/sneha-mukherjeee/",
+      },
+      {
+        name: "Tashi Nayak",
+        position: "Social Media Lead",
+        // image: ,
+        instagram: "https://www.instagram.com/tashi_nayak/",
+        linkedin: "https://www.linkedin.com/in/tashi-900227301/",
       },
     ],
   },
   {
     title: "Sponsorship & Liasioning Team",
     members: [
-      {
-        name: "Tarun Kumar",
-        position: "Vice-President",
-        image: tarun,
-        instagram: "https://instagram.com/_tarun_8987?igshid=ZGUzMzM3NWJiOQ==",
-        linkedin: "https://www.linkedin.com/in/tarun-kumar-438853230",
-      },
-      {
-        name: "Kanak Bharti",
-        position: "Sponsorship Head",
-        image: kanak,
-      },
+      // {
+      //   name: "Tarun Kumar",
+      //   position: "Vice-President",
+      //   image: tarun,
+      //   instagram: "https://instagram.com/_tarun_8987?igshid=ZGUzMzM3NWJiOQ==",
+      //   linkedin: "https://www.linkedin.com/in/tarun-kumar-438853230",
+      // },
       {
         name: "Divya Barnwal",
         position: "Sponsorship Head",
-        image: divyaB,
+        // image: ,
+        linkedin: "https://www.linkedin.com/in/divya-barnwal-13b326271/",
+      },
+      {
+        name: "Harsh Raj",
+        position: "Sponsorship Lead",
+        // image: ,
+        instagram: "https://www.instagram.com/_harshrj/",
+      },
+      {
+        name: "Rakshit Kumar",
+        position: "Sponsorship Lead",
+        // image: ,
+        linkedin: "https://www.linkedin.com/in/rakshit-kumar-9979b1292/",
       },
     ],
   },
   {
     title: "Design Team",
     members: [
-      {
-        name: "Shubham Kumar",
-        position: "Vice-President",
-        image: shubhamK,
-        instagram: "https://www.instagram.com/abhi54_nav/",
-        linkedin: "https://www.linkedin.com/in/shubham-kumar-644951229/",
-      },
+      // {
+      //   name: "Shubham Kumar",
+      //   position: "Vice-President",
+      //   image: shubhamK,
+      //   instagram: "https://www.instagram.com/abhi54_nav/",
+      //   linkedin: "https://www.linkedin.com/in/shubham-kumar-644951229/",
+      // },
       {
         name: "Nikhil",
         position: "Design Head",
         image: nikhil,
       },
       {
-        name: "Swarnim Raj",
-        position: "Design Head",
-        image: swarnim,
+        name: "Himanshu Kumar",
+        position: "Design Lead",
+        // image: nikhil,
       },
-      {
-        name: "Harsh Verma",
-        position: "Design Head",
-        image: harshV,
-      },
+
+      // {
+      //   name: "Swarnim Raj",
+      //   position: "Design Head",
+      //   image: swarnim,
+      // },
+      // {
+      //   name: "Harsh Verma",
+      //   position: "Design Head",
+      //   image: harshV,
+      // },
     ],
   },
   {
     title: "Resource & Publicity Team",
     members: [
+      // {
+      //   name: "Bharadwaj Pillai",
+      //   position: "Vice-President",
+      //   image: bharadwaj,
+      //   twitter:
+      //     "https://twitter.com/PillaiBharadwaj?t=zqntMd830ZXld1r1Bno7xg&s=08",
+      //   facebook:
+      //     "https://www.facebook.com/profile.php?id=100084211100937&mibextid=ZbWKwL",
+      //   instagram:
+      //     "https://instagram.com/pillai.bharadwaj?igshid=MzNlNGNkZWQ4Mg==",
+      //   linkedin: "https://www.linkedin.com/in/bharadwaj-pillai-088673248",
+      // },
+      // {
+      //   name: "Sudarsan Das",
+      //   position: "Vice-President",
+      //   image: sudarsan,
+      //   instagram: "https://instagram.com/aayushiverse?igshid=NGExMmI2YTkyZg==",
+      //   linkedin: "https://www.linkedin.com/in/aayushi-prasad-7b72ba1bb",
+      // },
       {
-        name: "Bharadwaj Pillai",
-        position: "Vice-President",
-        image: bharadwaj,
-        twitter:
-          "https://twitter.com/PillaiBharadwaj?t=zqntMd830ZXld1r1Bno7xg&s=08",
-        facebook:
-          "https://www.facebook.com/profile.php?id=100084211100937&mibextid=ZbWKwL",
-        instagram:
-          "https://instagram.com/pillai.bharadwaj?igshid=MzNlNGNkZWQ4Mg==",
-        linkedin: "https://www.linkedin.com/in/bharadwaj-pillai-088673248",
-      },
-      {
-        name: "Sudarsan Das",
-        position: "Vice-President",
-        image: sudarsan,
-        instagram: "https://instagram.com/aayushiverse?igshid=NGExMmI2YTkyZg==",
-        linkedin: "https://www.linkedin.com/in/aayushi-prasad-7b72ba1bb",
-      },
-      {
-        name: "Tisha Raj",
+        name: "Ritik Raj",
         position: "Publicity Head",
-        image: tisha,
+        // image: tisha,
+        linkedin: "https://www.linkedin.com/in/ritikraj0005/",
       },
-      {
-        name: "Devang Pandey",
-        position: "Publicity Head",
-        image: devang,
-        instagram: "https://instagram.com/aayushiverse?igshid=NGExMmI2YTkyZg==",
-        linkedin: "https://www.linkedin.com/in/aayushi-prasad-7b72ba1bb",
-      },
-      {
-        name: "Arpita Sinha",
-        position: "Resource and Publicity Head",
-        image: arpita,
-      },
+      // {
+      //   name: "Devang Pandey",
+      //   position: "Publicity Head",
+      //   image: devang,
+      //   instagram: "https://instagram.com/aayushiverse?igshid=NGExMmI2YTkyZg==",
+      //   linkedin: "https://www.linkedin.com/in/aayushi-prasad-7b72ba1bb",
+      // },
+      // {
+      //   name: "Arpita Sinha",
+      //   position: "Resource and Publicity Head",
+      //   image: arpita,
+      // },
     ],
   },
   {
     title: "Events Team",
     members: [
+      // {
+      //   name: "Piyush Raj",
+      //   position: "Vice-President",
+      //   image: piyush,
+      // },
       {
-        name: "Piyush Raj",
-        position: "Vice-President",
-        image: piyush,
+        name: "Harsvardhan Singh",
+        position: "Event Head",
+        // image: gourab,
+        linkedin: "https://www.linkedin.com/in/harshvardhan-singh-4p3sh17/",
       },
       {
-        name: "Prachi",
-        position: "Event Head",
-        image: prachi,
+        name: "Sudhanshu Kumar",
+        position: "Event Lead",
+        // image: prachi,
+        instagram: "https://www.instagram.com/k_sudhanshu04/",
       },
       {
-        name: "Aanchal Jain",
-        position: "Event Head",
-        image: aanchal,
-      },
-      {
-        name: "Gourab Mahato",
-        position: "Event Head",
-        image: gourab,
+        name: "Rahul Kumar",
+        position: "Event Lead",
+        linkedin: "https://www.linkedin.com/in/rahul-kumar-2297ba2a8/",
+        // image: aanchal,
       },
     ],
   },
 ];
-
 
 export const TESTIMONIALS = {
   items: [
@@ -497,33 +604,35 @@ export const EVENTS = [
 
 export const CONTACT_DATA = {
   address: "Birla Institue of Technology, Mesra, Ranchi, Jharkhand, India",
-  phone: [{
-    name: "Dr. Anand Prasad Sinha", 
-    designation:"Faculty Advisor",
-    number:'+919835127919',
-  },
-  {
-    name: "Aalok Praveen", 
-    designation:"President",
-    number:'+919546949124',
-  },
-  {
-    name: "Ansh Raj", 
-    designation:"Joint President",
-    number:'+916206437531',
-  },
-  {
-    name: "Lakshay Saini", 
-    designation:"Joint President",
-    number:'+918906709155',
-  }],
+  phone: [
+    {
+      name: "Dr. Anand Prasad Sinha",
+      designation: "Faculty Advisor",
+      number: "+919835127919",
+    },
+    {
+      name: "Aalok Praveen",
+      designation: "President",
+      number: "+919546949124",
+    },
+    {
+      name: "Ansh Raj",
+      designation: "Joint President",
+      number: "+916206437531",
+    },
+    {
+      name: "Lakshay Saini",
+      designation: "Joint President",
+      number: "+918906709155",
+    },
+  ],
 
   email: "financeclub@bitmesra.ac.in",
   formFields: [
-    { type: "text",name:"Name", placeholder: "Your Name"},
-    { type: "email",name:"Email", placeholder: "Your Email" },
-    { type: "text",name:"subject", placeholder: "Your Subject" },
-    { type: "textarea",name:"message", placeholder: "Your Message", rows: 5 },
+    { type: "text", name: "Name", placeholder: "Your Name" },
+    { type: "email", name: "Email", placeholder: "Your Email" },
+    { type: "text", name: "subject", placeholder: "Your Subject" },
+    { type: "textarea", name: "message", placeholder: "Your Message", rows: 5 },
   ],
   socialLinks: [
     { link: "https://facebook.com", icon: "<FaFacebook />" },
