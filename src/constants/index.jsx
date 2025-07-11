@@ -10,46 +10,45 @@ import bit from "../assets/events/adquest.jpg";
 import dosa from "../assets/DOSA.jpg";
 
 import anand from "../assets/Teamfc/Facadvisor.webp";
-import rishika from "../assets/Teamfc/RishikaKumari.webp";
-import shubhagr from "../assets/Teamfc/Shubhamagarwal.webp";
-import shreyansh from "../assets/Teamfc/Shreyansh.webp";
-import anupamnilav from "../assets/Teamfc/Anupamnilav.webp";
-import Lakshya from "../assets/Teamfc/Lakshya Saini.webp";
-import aalok from "../assets/Teamfc/aalokpraveen.webp";
-import ansh from "../assets/Teamfc/ansh.webp";
-import deevesh from "../assets/Teamfc/DeeveshMishra.webp";
 import ronit from "../assets/Teamfc/Ronitjain.webp";
-import riya from "../assets/Teamfc/riyasharma.webp";
-import ayush from "../assets/Teamfc/ayushsinghrajput.webp";
 import ritik from "../assets/Teamfc/RitikRaj.webp";
 import harsh from "../assets/Teamfc/HarshSingh.webp";
-import rishabh from "../assets/Teamfc/RishabhSinha.webp";
-import shreyans from "../assets/Teamfc/ShreyansJain.webp";
+import rishabh from "../assets/Teamfc/RishabhSinha_k22.webp";
 import ankit from "../assets/Teamfc/AnkitVerma.webp";
-import harshit from "../assets/Teamfc/Harshit.webp";
-import shubham from "../assets/Teamfc/ShubhamPriyanshu.webp";
-import ashutosh from "../assets/Teamfc/AshutoshMishra.webp";
-import deepak from "../assets/Teamfc/DeepakPradhan.webp";
-import harshraj from "../assets/Teamfc/Harshraj.webp";
-import aditi from "../assets/Teamfc/AditiDey.webp";
 import harshvardhan from "../assets/Teamfc/Harshvardhan.webp";
 import divya from "../assets/Teamfc/Divya.webp";
-import tarun from "../assets/Teamfc/Tarun.webp";
-import kanak from "../assets/Teamfc/kanakbharti.webp";
-import divyaB from "../assets/Teamfc/divyabarnwal.webp";
-import shubhamK from "../assets/Teamfc/ShubhamKumar.webp";
+import divyaB from "../assets/Teamfc/divyabarnwal_k22.jpg";
 import nikhil from "../assets/Teamfc/Nikhil.webp";
-import swarnim from "../assets/Teamfc/Swarnim.webp";
 import harshV from "../assets/Teamfc/HarshVerma.webp";
-import bharadwaj from "../assets/Teamfc/Bharadwajpillai.webp";
-import sudarsan from "../assets/Teamfc/SUDARSANDAS.webp";
-import tisha from "../assets/Teamfc/Tisha.webp";
-import devang from "../assets/Teamfc/Devang.webp";
-import arpita from "../assets/Teamfc/arpitasinha.webp";
-import piyush from "../assets/Teamfc/PiyushRaj.webp";
 import prachi from "../assets/Teamfc/Prachi.webp";
-import aanchal from "../assets/Teamfc/Aanchal.webp";
 import gourab from "../assets/Teamfc/Gourab.webp";
+import aditi from "../assets/Teamfc/AditiDey.webp;
+import deepak from "../assets/Teamfc/DeepakPradhan.webp;
+import pushkar from "../assets/Teamfc/Pushkar_Kumar.jpg;
+import yash from "../assets/Teamfc/Yash_Paliwal.jpg;
+import rakshitJ from "../assets/Teamfc/RakshitJha.jpg;
+import shreya from "../assets/Teamfc/Shreya.jpg;
+import abhinav from "../assets/Teamfc/Abhinav_Anand.jpg;
+import shruti from "../assets/Teamfc/Shruti_Kumari.jpg;
+import vaibhavR from "../assets/Teamfc/Vaibhav_Raj.jpg;
+import shubhR from "../assets/Teamfc/Shubh_Raj.jpg;
+import harshR from "../assets/Teamfc/Harsh_k23.jpeg;
+import rakshitK from "../assets/Teamfc/Rakshit_Kumar.jpg;
+import himanshu from "../assets/Teamfc/Himanshu_Kumar.jpg;
+import ShrishtiM from "../assets/Teamfc/Shrishti.jpg;
+import HarishR from "../assets/Teamfc/Harish.webp;
+import sudhanshu from "../assets/Teamfc/Sudhanshu.jpg;
+import rahulK from "../assets/Teamfc/Rahul_kumar.jpg;
+import aditya from "../assets/Teamfc/AdityaAgarwal.jpg;
+import sneha from "../assets/Teamfc/Sneha.jpg;
+import tashi from "../assets/Teamfc/Tashi.png;
+import hardik from "../assets/Teamfc/Hardik.HEIC;
+import rahulB from "../assets/Teamfc/Rahul_Bharti.jpg;
+import nihal from "../assets/Teamfc/Nihal.jpg;
+import shirish from "../assets/Teamfc/Shirish.jpg;
+import gautam from "../assets/Teamfc/Gautam_Kumar.jpg;
+import samyak from "../assets/Teamfc/Samyak.HEIC;
+import vaibhavB from "../assets/Teamfc/VaibhavBahal.jpg;
 
 export const teamData = [
   {
@@ -139,27 +138,27 @@ export const teamData = [
       {
         name: "Abhinav Anand",
         position: "Director",
-        // image: harsh,
+        // image: abhinav,
         instagram: "https://www.instagram.com/abhinav_ai333/",
       },
       {
         name: "Samyak Jain",
         position: "Director",
-        // image: ritik,
+        // image: samyak,
         instagram: "https://www.instagram.com/__samyakjain.__/",
         linkedin: "https://www.linkedin.com/in/samyak-jain-6266992504-/",
       },
       {
         name: "Shruti Kumari",
         position: "Director",
-        // image: rishabh,
+        // image: shruti,
         linkedin: "https://www.linkedin.com/in/shruti-kumari-627198298/",
         instagram: "https://www.instagram.com/oddly_typical/",
       },
       {
         name: "Vaibhav Bahal",
         position: "Trading & Investment Director",
-        // image: vaibhav,
+        // image: vaibhavB,
         linkedin: "https://www.linkedin.com/in/vaibhav-bahal-24031b32b/",
         instagram: "https://www.instagram.com/vaibhavbahal_/",
       },
@@ -173,7 +172,7 @@ export const teamData = [
       {
         name: "Rakshit Jha",
         position: "Joint Treasurer",
-        // image: rakshit,
+        // image: rakshitJ,
         linkedin: "https://www.linkedin.com/in/rakshit-jha-7a75382a6/",
       },
       {
@@ -185,42 +184,42 @@ export const teamData = [
       {
         name: "Ashish Ranjan",
         position: "Executive Member",
-        // image:
+        // image:ashish,
         linkedin: "https://www.linkedin.com/in/ashish-ranjan-b39b45298/",
       },
       {
         name: "Hardik",
         position: "Executive Member",
-        // image:
+        // image:hardik,
         linkedin: "https://www.linkedin.com/in/hardik-khalkho-16a19a2a8/",
       },
       {
         name: "Rahul Bharti",
         position: "Executive Member",
-        // image:
+        // image:rahulB,
         linkedin: "https://www.linkedin.com/in/rahul-bharti-757173276/",
       },
       {
         name: "Nihal Srivastava",
         position: "PG Executive Member",
-        // image:
+        // image:nihal,
         linkedin: "https://www.linkedin.com/in/nihal-srivastava-a63060167/",
       },
       {
         name: "Shirish Mishra",
         position: "PG Executive Member",
-        // image:
+        // image:shirish,
       },
       {
         name: "Gautam Kumar",
         position: "PG Executive Member",
-        // image:
+        // image:gautam,
         linkedin: "https://www.linkedin.com/in/gautam-kumar-075b39224/",
       },
       {
         name: "Shrishti Tiwri",
         position: "PG Executive Member",
-        // image:
+        // image:shrishtiT,
       },
     ],
   },
@@ -242,18 +241,18 @@ export const teamData = [
       {
         name: "Ankit Verma",
         position: "Web Head",
-        // image: ,
+        // image:ankit ,
         linkedin: "https://www.linkedin.com/in/ankitverma2405/",
       },
       {
         name: "Vaibhav Raj",
         position: "Web Master",
-        // image: ashutosh,
+        // image: vaibhavR,
       },
       {
         name: "Shubh Raj",
         position: "Web Master",
-        // image: deepak,
+        // image: shubhR,
       },
     ],
   },
@@ -263,7 +262,7 @@ export const teamData = [
       // {
       //   name: "Harsh Raj",
       //   position: "Vice-President",
-      //   image: harshraj,
+      //   image: harshR,
       // },
       {
         name: "Harsh Verma",
@@ -279,14 +278,14 @@ export const teamData = [
       {
         name: "Shrishti Mishra",
         position: "Content Lead",
-        // image: harshvardhan,
+        // image: shrishtiM,
         instagram: "https://www.instagram.com/shrishti__3304/",
         linkedin: "https://www.linkedin.com/in/shrishti-mishra-05454b31a/",
       },
       {
         name: "Harish Roy",
         position: "Content Lead",
-        // image: divya,
+        // image: HarishR,
         instagram: "https://www.instagram.com/harishroyroy/",
       },
     ],
@@ -302,25 +301,25 @@ export const teamData = [
       {
         name: "Aditya Agarwal",
         position: "Outreach Lead",
-        // image: harshvardhan,
+        // image: aditya,
         instagram: "https://www.instagram.com/adiagarwal_2905/",
       },
       {
         name: "Daksh Kweera",
         position: "Outreach Lead",
-        // image: harshvardhan,
+        // image: daksh,
         linkedin: "https://www.linkedin.com/in/daksh-kweera-2008aa289/",
       },
       {
         name: "Sneha Mukherjee",
         position: "Social Media Lead",
-        // image: ,
+        // image:sneha ,
         linkedin: "https://www.linkedin.com/in/sneha-mukherjeee/",
       },
       {
         name: "Tashi Nayak",
         position: "Social Media Lead",
-        // image: ,
+        // image:tashi ,
         instagram: "https://www.instagram.com/tashi_nayak/",
         linkedin: "https://www.linkedin.com/in/tashi-900227301/",
       },
@@ -339,19 +338,19 @@ export const teamData = [
       {
         name: "Divya Barnwal",
         position: "Sponsorship Head",
-        // image: ,
+        // image:divyaB ,
         linkedin: "https://www.linkedin.com/in/divya-barnwal-13b326271/",
       },
       {
         name: "Harsh Raj",
         position: "Sponsorship Lead",
-        // image: ,
+        // image:harshR ,
         instagram: "https://www.instagram.com/_harshrj/",
       },
       {
         name: "Rakshit Kumar",
         position: "Sponsorship Lead",
-        // image: ,
+        // image:rakshitK ,
         linkedin: "https://www.linkedin.com/in/rakshit-kumar-9979b1292/",
       },
     ],
@@ -362,7 +361,7 @@ export const teamData = [
       // {
       //   name: "Shubham Kumar",
       //   position: "Vice-President",
-      //   image: shubhamK,
+      //   image: shubham,
       //   instagram: "https://www.instagram.com/abhi54_nav/",
       //   linkedin: "https://www.linkedin.com/in/shubham-kumar-644951229/",
       // },
@@ -374,7 +373,7 @@ export const teamData = [
       {
         name: "Himanshu Kumar",
         position: "Design Lead",
-        // image: nikhil,
+        // image: himanshu,
       },
 
       // {
@@ -414,7 +413,7 @@ export const teamData = [
       {
         name: "Ritik Raj",
         position: "Publicity Head",
-        // image: tisha,
+        // image:ritik,
         linkedin: "https://www.linkedin.com/in/ritikraj0005/",
       },
       // {
@@ -442,20 +441,20 @@ export const teamData = [
       {
         name: "Harsvardhan Singh",
         position: "Event Head",
-        // image: gourab,
+        // image: harshvardhan,
         linkedin: "https://www.linkedin.com/in/harshvardhan-singh-4p3sh17/",
       },
       {
         name: "Sudhanshu Kumar",
         position: "Event Lead",
-        // image: prachi,
+        // image: sudhanshu,
         instagram: "https://www.instagram.com/k_sudhanshu04/",
       },
       {
         name: "Rahul Kumar",
         position: "Event Lead",
         linkedin: "https://www.linkedin.com/in/rahul-kumar-2297ba2a8/",
-        // image: aanchal,
+        // image:rahulK,
       },
     ],
   },
