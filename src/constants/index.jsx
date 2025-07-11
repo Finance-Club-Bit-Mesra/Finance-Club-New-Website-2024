@@ -534,19 +534,19 @@ export const CONTACT_DATA = {
       number: "+919835127919",
     },
     {
-      name: "Aalok Praveen",
+      name: "Ronit Jain",
       designation: "President",
-      number: "+919546949124",
+      number: "+919340683467",
     },
     {
-      name: "Ansh Raj",
+      name: "Prachi",
       designation: "Joint President",
       number: "+916206437531",
     },
     {
-      name: "Lakshay Saini",
+      name: "Gourab Mahato",
       designation: "Joint President",
-      number: "+918906709155",
+      number: "+919091621008",
     },
   ],
 
