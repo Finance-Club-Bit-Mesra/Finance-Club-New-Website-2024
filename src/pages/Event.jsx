@@ -8,7 +8,7 @@ import tycoon from "../assets/events/tycoon.jpeg";
 import marketkshtera from "../assets/events/maket_kshetra.jpeg";
 import arthanarth from "../assets/events/arthanarth.jpg";
 import businessplan from "../assets/events/bplan.jpg";
-import chess from "https://drive.google.com/file/d/1MYtELNGBOCH0JlV9siC8cRELF6CPhnLK/view?usp=drivesdk ";
+import chess from "../assets/events/chess.jpg";
 import estimania from "../assets/events/estimania.jpg";
 import wallstreet from "../assets/events/wallstreet.jpg";
 import bitnishan from "../assets/events/bitnishan.jpg";

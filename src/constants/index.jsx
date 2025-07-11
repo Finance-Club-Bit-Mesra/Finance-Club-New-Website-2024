@@ -13,7 +13,7 @@ import anand from "../assets/Teamfc/Facadvisor.webp";
 import ronit from "../assets/Teamfc/Ronitjain.webp";
 import ritik from "../assets/Teamfc/RitikRaj.webp";
 import harsh from "../assets/Teamfc/HarshSingh.webp";
-import rishabh from "../assets/Teamfc/RishabhSinha_k22.webp";
+import rishabh from "../assets/Teamfc/RishabhSinha_k22.jpg";
 import ankit from "../assets/Teamfc/AnkitVerma.webp";
 import harshvardhan from "../assets/Teamfc/Harshvardhan.webp";
 import divya from "../assets/Teamfc/Divya.webp";
@@ -22,33 +22,36 @@ import nikhil from "../assets/Teamfc/Nikhil.webp";
 import harshV from "../assets/Teamfc/HarshVerma.webp";
 import prachi from "../assets/Teamfc/Prachi.webp";
 import gourab from "../assets/Teamfc/Gourab.webp";
-import aditi from "../assets/Teamfc/AditiDey.webp;
-import deepak from "../assets/Teamfc/DeepakPradhan.webp;
-import pushkar from "../assets/Teamfc/Pushkar_Kumar.jpg;
-import yash from "../assets/Teamfc/Yash_Paliwal.jpg;
-import rakshitJ from "../assets/Teamfc/RakshitJha.jpg;
-import shreya from "../assets/Teamfc/Shreya.jpg;
-import abhinav from "../assets/Teamfc/Abhinav_Anand.jpg;
-import shruti from "../assets/Teamfc/Shruti_Kumari.jpg;
-import vaibhavR from "../assets/Teamfc/Vaibhav_Raj.jpg;
-import shubhR from "../assets/Teamfc/Shubh_Raj.jpg;
-import harshR from "../assets/Teamfc/Harsh_k23.jpeg;
-import rakshitK from "../assets/Teamfc/Rakshit_Kumar.jpg;
-import himanshu from "../assets/Teamfc/Himanshu_Kumar.jpg;
-import ShrishtiM from "../assets/Teamfc/Shrishti.jpg;
-import HarishR from "../assets/Teamfc/Harish.webp;
-import sudhanshu from "../assets/Teamfc/Sudhanshu.jpg;
-import rahulK from "../assets/Teamfc/Rahul_kumar.jpg;
-import aditya from "../assets/Teamfc/AdityaAgarwal.jpg;
-import sneha from "../assets/Teamfc/Sneha.jpg;
-import tashi from "../assets/Teamfc/Tashi.png;
-import hardik from "../assets/Teamfc/Hardik.HEIC;
-import rahulB from "../assets/Teamfc/Rahul_Bharti.jpg;
-import nihal from "../assets/Teamfc/Nihal.jpg;
-import shirish from "../assets/Teamfc/Shirish.jpg;
-import gautam from "../assets/Teamfc/Gautam_Kumar.jpg;
-import samyak from "../assets/Teamfc/Samyak.HEIC;
-import vaibhavB from "../assets/Teamfc/VaibhavBahal.jpg;
+import aditi from "../assets/Teamfc/AditiDey.webp";
+import deepak from "../assets/Teamfc/DeepakPradhan.webp";
+import pushkar from "../assets/Teamfc/Pushkar_Kumar.jpg";
+import yash from "../assets/Teamfc/Yash_Paliwal.jpg";
+import rakshitJ from "../assets/Teamfc/RakshitJha.jpg";
+import shreya from "../assets/Teamfc/Shreya.jpg";
+import abhinav from "../assets/Teamfc/Abhinav_Anand.jpg";
+import shruti from "../assets/Teamfc/Shruti_Kumari.jpg";
+import vaibhavR from "../assets/Teamfc/Vaibhav_Raj.jpg";
+import shubhR from "../assets/Teamfc/Shubh_Raj.jpg";
+import harshR from "../assets/Teamfc/Harsh_k23.jpeg";
+import rakshitK from "../assets/Teamfc/Rakshit_Kumar.jpg";
+import himanshu from "../assets/Teamfc/Himanshu_Kumar.jpg";
+import ShrishtiM from "../assets/Teamfc/Shrishti.jpg";
+import HarishR from "../assets/Teamfc/Harish.webp";
+import sudhanshu from "../assets/Teamfc/Sudhanshu.jpg";
+import rahulK from "../assets/Teamfc/Rahul_kumar.jpg";
+import aditya from "../assets/Teamfc/AdityaAgarwal.jpg";
+import sneha from "../assets/Teamfc/Sneha.jpg";
+import tashi from "../assets/Teamfc/Tashi.png";
+import hardik from "../assets/Teamfc/Hardik.jpg";
+import rahulB from "../assets/Teamfc/Rahul_Bharti.jpg";
+import nihal from "../assets/Teamfc/Nihal.jpg";
+import shirish from "../assets/Teamfc/Shirish.jpg";
+import gautam from "../assets/Teamfc/Gautam_Kumar.jpg";
+import samyak from "../assets/Teamfc/Samyak.jpg";
+import vaibhavB from "../assets/Teamfc/VaibhavBahal.jpg";
+import piyush from "../assets/Teamfc/Piyush.jpg";
+
+
 
 export const teamData = [
   {
@@ -110,14 +113,14 @@ export const teamData = [
       {
         name: "Pushkar Kumar",
         position: "General Secretary",
-        // image: pushkar,
+        image: pushkar,
         linkedin: "https://www.linkedin.com/in/pushkar-kumar-66309822a/",
         instagram: "https://www.instagram.com/pushkar_k172/",
       },
       {
         name: "Yash Paliwal",
         position: "General Secretary",
-        // image: yash,
+        image: yash,
         instagram: "https://www.instagram.com/yashhhh___1105/",
       },
       {
@@ -130,7 +133,7 @@ export const teamData = [
       {
         name: "Piyush Pratap Singh",
         position: "Joint Secretary",
-        // image: piyushPratap,
+        image: piyush,
         linkedin:
           "https://www.linkedin.com/in/pps-bitmesra-k23/overlay/background-image/",
         instagram: "https://www.instagram.com/piyush.p.s/",
@@ -138,27 +141,27 @@ export const teamData = [
       {
         name: "Abhinav Anand",
         position: "Director",
-        // image: abhinav,
+        image: abhinav,
         instagram: "https://www.instagram.com/abhinav_ai333/",
       },
       {
         name: "Samyak Jain",
         position: "Director",
-        // image: samyak,
+        image: samyak,
         instagram: "https://www.instagram.com/__samyakjain.__/",
         linkedin: "https://www.linkedin.com/in/samyak-jain-6266992504-/",
       },
       {
         name: "Shruti Kumari",
         position: "Director",
-        // image: shruti,
+        image: shruti,
         linkedin: "https://www.linkedin.com/in/shruti-kumari-627198298/",
         instagram: "https://www.instagram.com/oddly_typical/",
       },
       {
         name: "Vaibhav Bahal",
         position: "Trading & Investment Director",
-        // image: vaibhavB,
+        image: vaibhavB,
         linkedin: "https://www.linkedin.com/in/vaibhav-bahal-24031b32b/",
         instagram: "https://www.instagram.com/vaibhavbahal_/",
       },
@@ -172,14 +175,13 @@ export const teamData = [
       {
         name: "Rakshit Jha",
         position: "Joint Treasurer",
-        // image: rakshitJ,
+        image: rakshitJ,
         linkedin: "https://www.linkedin.com/in/rakshit-jha-7a75382a6/",
       },
       {
         name: "Shreya",
         position: "Joint Treasurer",
-        // image: shreya,
-        // linkedin: "https://www.linkedin.com/in/rakshit-jha-7a75382a6/", can'nt find linkedin or insta
+        image: shreya,
       },
       {
         name: "Ashish Ranjan",
@@ -190,30 +192,30 @@ export const teamData = [
       {
         name: "Hardik",
         position: "Executive Member",
-        // image:hardik,
+        image:hardik,
         linkedin: "https://www.linkedin.com/in/hardik-khalkho-16a19a2a8/",
       },
       {
         name: "Rahul Bharti",
         position: "Executive Member",
-        // image:rahulB,
+        image:rahulB,
         linkedin: "https://www.linkedin.com/in/rahul-bharti-757173276/",
       },
       {
         name: "Nihal Srivastava",
         position: "PG Executive Member",
-        // image:nihal,
+        image:nihal,
         linkedin: "https://www.linkedin.com/in/nihal-srivastava-a63060167/",
       },
       {
         name: "Shirish Mishra",
         position: "PG Executive Member",
-        // image:shirish,
+        image:shirish,
       },
       {
         name: "Gautam Kumar",
         position: "PG Executive Member",
-        // image:gautam,
+        image:gautam,
         linkedin: "https://www.linkedin.com/in/gautam-kumar-075b39224/",
       },
       {
@@ -226,44 +228,27 @@ export const teamData = [
   {
     title: "Web Team",
     members: [
-      // {
-      //   name: "Harshit Prandiyal",
-      //   position: "Vice-President",
-      //   image: harshit,
-      // },
-      // {
-      //   name: "Shubham Priyanshu",
-      //   position: "Vice-President",
-      //   image: shubham,
-      //   linkedin: "https://www.linkedin.com/in/shubham-priyanshu-035b25215/",
-      //   instagram: "https://www.instagram.com/shubhu_10_/",
-      // },
       {
         name: "Ankit Verma",
         position: "Web Head",
-        // image:ankit ,
+        image:ankit ,
         linkedin: "https://www.linkedin.com/in/ankitverma2405/",
       },
       {
         name: "Vaibhav Raj",
         position: "Web Master",
-        // image: vaibhavR,
+        image: vaibhavR,
       },
       {
         name: "Shubh Raj",
         position: "Web Master",
-        // image: shubhR,
+        image: shubhR,
       },
     ],
   },
   {
     title: "Content Team",
     members: [
-      // {
-      //   name: "Harsh Raj",
-      //   position: "Vice-President",
-      //   image: harshR,
-      // },
       {
         name: "Harsh Verma",
         position: "Media Head",
@@ -278,14 +263,14 @@ export const teamData = [
       {
         name: "Shrishti Mishra",
         position: "Content Lead",
-        // image: shrishtiM,
+        image: ShrishtiM,
         instagram: "https://www.instagram.com/shrishti__3304/",
         linkedin: "https://www.linkedin.com/in/shrishti-mishra-05454b31a/",
       },
       {
         name: "Harish Roy",
         position: "Content Lead",
-        // image: HarishR,
+        image: HarishR,
         instagram: "https://www.instagram.com/harishroyroy/",
       },
     ],
@@ -296,12 +281,12 @@ export const teamData = [
       {
         name: "Arpita Sinha",
         position: "Outreach Head",
-        image: arpita,
+        // image: arpita,
       },
       {
         name: "Aditya Agarwal",
         position: "Outreach Lead",
-        // image: aditya,
+        image: aditya,
         instagram: "https://www.instagram.com/adiagarwal_2905/",
       },
       {
@@ -313,13 +298,13 @@ export const teamData = [
       {
         name: "Sneha Mukherjee",
         position: "Social Media Lead",
-        // image:sneha ,
+        image:sneha ,
         linkedin: "https://www.linkedin.com/in/sneha-mukherjeee/",
       },
       {
         name: "Tashi Nayak",
         position: "Social Media Lead",
-        // image:tashi ,
+        image:tashi ,
         instagram: "https://www.instagram.com/tashi_nayak/",
         linkedin: "https://www.linkedin.com/in/tashi-900227301/",
       },
@@ -328,29 +313,22 @@ export const teamData = [
   {
     title: "Sponsorship & Liasioning Team",
     members: [
-      // {
-      //   name: "Tarun Kumar",
-      //   position: "Vice-President",
-      //   image: tarun,
-      //   instagram: "https://instagram.com/_tarun_8987?igshid=ZGUzMzM3NWJiOQ==",
-      //   linkedin: "https://www.linkedin.com/in/tarun-kumar-438853230",
-      // },
       {
         name: "Divya Barnwal",
         position: "Sponsorship Head",
-        // image:divyaB ,
+        image:divyaB ,
         linkedin: "https://www.linkedin.com/in/divya-barnwal-13b326271/",
       },
       {
         name: "Harsh Raj",
         position: "Sponsorship Lead",
-        // image:harshR ,
+        image:harshR ,
         instagram: "https://www.instagram.com/_harshrj/",
       },
       {
         name: "Rakshit Kumar",
         position: "Sponsorship Lead",
-        // image:rakshitK ,
+        image:rakshitK ,
         linkedin: "https://www.linkedin.com/in/rakshit-kumar-9979b1292/",
       },
     ],
@@ -358,13 +336,6 @@ export const teamData = [
   {
     title: "Design Team",
     members: [
-      // {
-      //   name: "Shubham Kumar",
-      //   position: "Vice-President",
-      //   image: shubham,
-      //   instagram: "https://www.instagram.com/abhi54_nav/",
-      //   linkedin: "https://www.linkedin.com/in/shubham-kumar-644951229/",
-      // },
       {
         name: "Nikhil",
         position: "Design Head",
@@ -373,88 +344,41 @@ export const teamData = [
       {
         name: "Himanshu Kumar",
         position: "Design Lead",
-        // image: himanshu,
+        image: himanshu,
       },
-
-      // {
-      //   name: "Swarnim Raj",
-      //   position: "Design Head",
-      //   image: swarnim,
-      // },
-      // {
-      //   name: "Harsh Verma",
-      //   position: "Design Head",
-      //   image: harshV,
-      // },
     ],
   },
   {
     title: "Resource & Publicity Team",
     members: [
-      // {
-      //   name: "Bharadwaj Pillai",
-      //   position: "Vice-President",
-      //   image: bharadwaj,
-      //   twitter:
-      //     "https://twitter.com/PillaiBharadwaj?t=zqntMd830ZXld1r1Bno7xg&s=08",
-      //   facebook:
-      //     "https://www.facebook.com/profile.php?id=100084211100937&mibextid=ZbWKwL",
-      //   instagram:
-      //     "https://instagram.com/pillai.bharadwaj?igshid=MzNlNGNkZWQ4Mg==",
-      //   linkedin: "https://www.linkedin.com/in/bharadwaj-pillai-088673248",
-      // },
-      // {
-      //   name: "Sudarsan Das",
-      //   position: "Vice-President",
-      //   image: sudarsan,
-      //   instagram: "https://instagram.com/aayushiverse?igshid=NGExMmI2YTkyZg==",
-      //   linkedin: "https://www.linkedin.com/in/aayushi-prasad-7b72ba1bb",
-      // },
       {
         name: "Ritik Raj",
         position: "Publicity Head",
-        // image:ritik,
+        image:ritik,
         linkedin: "https://www.linkedin.com/in/ritikraj0005/",
       },
-      // {
-      //   name: "Devang Pandey",
-      //   position: "Publicity Head",
-      //   image: devang,
-      //   instagram: "https://instagram.com/aayushiverse?igshid=NGExMmI2YTkyZg==",
-      //   linkedin: "https://www.linkedin.com/in/aayushi-prasad-7b72ba1bb",
-      // },
-      // {
-      //   name: "Arpita Sinha",
-      //   position: "Resource and Publicity Head",
-      //   image: arpita,
-      // },
     ],
   },
   {
     title: "Events Team",
     members: [
-      // {
-      //   name: "Piyush Raj",
-      //   position: "Vice-President",
-      //   image: piyush,
-      // },
       {
         name: "Harsvardhan Singh",
         position: "Event Head",
-        // image: harshvardhan,
+        image: harshvardhan,
         linkedin: "https://www.linkedin.com/in/harshvardhan-singh-4p3sh17/",
       },
       {
         name: "Sudhanshu Kumar",
         position: "Event Lead",
-        // image: sudhanshu,
+        image: sudhanshu,
         instagram: "https://www.instagram.com/k_sudhanshu04/",
       },
       {
         name: "Rahul Kumar",
         position: "Event Lead",
         linkedin: "https://www.linkedin.com/in/rahul-kumar-2297ba2a8/",
-        // image:rahulK,
+        image:rahulK,
       },
     ],
   },
@@ -476,46 +400,46 @@ export const TESTIMONIALS = {
     },
     {
       text: "Basking in the privilege and fulfilling the strenuous responsibility of the Vice President of one of the fastest-growing clubs in the history of BIT MESRA has been an enigmatic yet enjoyable journey. We have grown from a handful of finance aficionados to around 90 very talented BITians, inducted after a grilling recruitment process with a selection rate of less than 30%.",
-      imageSrc: rishika,
-      name: "Rishika Kumari",
+      imageSrc: harsh,
+      name: "Harsh Singh",
       username: "Vice President",
     },
     {
       text: "Being a part of Finance Club BIT Mesra helped me grow in my academic and professional career. Whether it be projects at college or management at companies, Finance Club helped me think quantitatively and manage things effectively.",
-      imageSrc: shubhagr,
-      name: "Shubham Agarwal",
+      imageSrc: gourab,
+      name: "Gourab Mahato",
       username: "Joint President",
     },
     {
       text: "If you are a finance enthusiast, this place is the best way to meet other like-minded people. In my opinion, this organization is an accurate mix of fun, knowledge, and finance. There’s an ocean of good events and webinars that can be a great source of information.",
-      imageSrc: shreyansh,
-      name: "Shreyansh",
+      imageSrc: aditi,
+      name: "Aditi Dey",
       username: "Vice President",
     },
     {
       text: "As Vice President, I had the privilege of leading a high-performing team of 45 members at BIT Mesra. Through strategic planning and execution of events, we consistently exceeded our goals, fostering a culture of collaboration, innovation, and teamwork.",
-      imageSrc: anupamnilav,
-      name: "Anupam Nilav",
+      imageSrc: rishabh,
+      name: "Rishabh Sinha",
       username: "Vice President",
     },
     {
       text: "The finance club has allowed me to level my game professionally and personally. It has provided me invaluable experiences in team management, strategic planning, and networking with industry professionals, opening up numerous career opportunities.",
-      imageSrc: Lakshya,
-      name: "Lakshya Saini",
+      imageSrc: prachi,
+      name: "Prachi",
       username: "Joint President",
     },
     {
       text: "As the president of the Finance Club, it was my greatest honor to manage a team of 100+ members. The solidarity between every member of the association is something we are really proud of. Finance Club is a tremendous catalyst for students building strong finance knowledge.",
-      imageSrc: aalok,
-      name: "Aalok Praveen",
+      imageSrc: ronit,
+      name: "Ronit Jain",
       username: "President",
     },
-    {
-      text: "Leading one of the fastest-growing clubs in BIT MESRA’s history has been both a privilege and a strenuous responsibility. This journey has been enigmatic yet immensely enjoyable. We provide unparalleled support to BITians through countless webinars, seminars, events, and talks.",
-      imageSrc: ansh,
-      name: "Ansh Raj",
-      username: "Joint President",
-    },
+    // {
+    //   text: "Leading one of the fastest-growing clubs in BIT MESRA’s history has been both a privilege and a strenuous responsibility. This journey has been enigmatic yet immensely enjoyable. We provide unparalleled support to BITians through countless webinars, seminars, events, and talks.",
+    //   imageSrc: ansh,
+    //   name: "Ansh Raj",
+    //   username: "Joint President",
+    // },
   ],
 };
 
