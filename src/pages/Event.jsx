@@ -10,7 +10,7 @@ import surplusanddefect from "../assets/events/surplusanddefect.jpg";
 import chess from "../assets/events/chess.jpg";
 import estimania from "../assets/events/estimania.jpg";
 import wallstreet from "../assets/events/wallstreet.jpg";
-import campusCaptilist from "../assets\events\campusCapitalist.jpg";
+import campusCaptilist from "../assets/events/campusCapitalist.jpg";
 import cardinaldeception from "../assets/events/cardinaldeception.jpg";
 import djnight from "../assets/events/djnight.jpg";
 import musicalnight from "../assets/events/musicalnight.jpg";
