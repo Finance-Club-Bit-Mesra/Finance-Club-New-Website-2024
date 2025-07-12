@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import abhishek from '../assets/speakers/abhishek.jpg'
-import uzair from '../assets/speakers/uzair.jpeg'
-import abhay from '../assets/speakers/abhay.jpeg'
-import virendra from '../assets/speakers/virendra.jpg'
-import sakchi from '../assets/speakers/sakchi.jpeg'
-import koyesha from '../assets/speakers/koyesha.jpeg'
+import uzair from '../assets/speakers/uzair.jpg'
+import abhay from '../assets/speakers/abhay.jpg'
+import virendra from '../assets/speakers/virendraverma.jpg'
+import sakchi from '../assets/speakers/sakchi.jpg'
+import koyesha from '../assets/speakers/koyesha.jpg'
 const Speaker = () => {
   const speakers = [
     {
