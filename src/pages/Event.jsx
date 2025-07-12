@@ -1,17 +1,21 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import stalkthestock from "../assets/events/stalkthestock.jpeg";
-import behindthestump from "../assets/events/behindthestumps.jpeg";
-import houseoflegacy from "../assets/events/houseoflegacy.jpeg";
-import enigma from "../assets/events/enigma.jpeg";
-import tycoon from "../assets/events/tycoon.jpeg";
-import marketkshtera from "../assets/events/maket_kshetra.jpeg";
+import stalkthestock from "../assets/events/stalkthestock.jpg";
+import behindthestump from "../assets/events/behindthestumps.jpg";
+import sellMeThis from "../assets/events/sellMeThis.jpg";
+import enigma from "../assets/events/enigma.jpg";
+import sirfexcel from "../assets/events/sirfexcel.jpg";
 import arthanarth from "../assets/events/arthanarth.jpg";
-import businessplan from "../assets/events/bplan.jpg";
+import surplusanddefect from "../assets/events/surplusanddefect.jpg";
 import chess from "../assets/events/chess.jpg";
 import estimania from "../assets/events/estimania.jpg";
 import wallstreet from "../assets/events/wallstreet.jpg";
-import bitnishan from "../assets/events/bitnishan.jpg";
+import campusCaptilist from "../assets/events/campusCapitalist.jpg";
+import cardinaldeception from "../assets/events/cardinaldeception.jpg";
+import djnight from "../assets/events/djnight.jpg";
+import musicalnight from "../assets/events/musicalnight.jpg";
+import escapetheratrace from "../assets/events/escapetheratrace.jpg";
+import escapethematrix from "../assets/events/escapethematrix.jpg";
 import cfa from "../assets/workshop/cfa.jpg";
 import virendra from "../assets/workshop/virendra.jpg";
 import zerodha from "../assets/workshop/zerodha.jpg";
@@ -26,58 +30,58 @@ const events = [
     id: 1,
     title: "Behind the Stumps",
     description: "Cricket-themed event with a prize worth 20K.",
-    date: "21st Jan",
+    date: "19th Jan",
     image: behindthestump,
   },
   {
     id: 2,
-    title: "BIT Nishan-24",
+    title: "Sell Me This",
     description:
-      "Innovation contest with the theme 'No bright idea should go unnoticed'.",
-    date: "5th Nov 2022",
-    image: bitnishan,
+      "this is a challenge where you must convincingly pitch any product.",
+    date: "19th jan",
+    image: sellMeThis,
   },
   {
     id: 3,
     title: "Σnigma",
     description: "National level technical case study competition.",
-    date: "20th Jan",
+    date: "18th Jan",
     image: enigma,
   },
   {
     id: 4,
     title: "Stalk the Stock",
     description: "Virtual stock simulation game",
-    date: "19 Jan",
+    date: "15 to 17 Jan",
     image: stalkthestock,
   },
   {
     id: 5,
     title: "Arth Anarth",
     description: "Show off your financial wit in our meme competition! From stock market laughs to money management jokes, bring your best memes to the table.",
-    date: "20th Jan",
+    date: "18th Jan",
     image: arthanarth,
   },
   {
     id: 6,
-    title: "Tycoon in Tune",
-    description: "A finance and strategy based quiz and board game.",
-    date: "16th March",
-    image: tycoon,
+    title: "Sirf Excel",
+    description: "Sirf Excel is a high-stakes, two-round showdown where strategy, intellect, and financial finesse collide to conquer the matrix.",
+    date: "17-19th Jan",
+    image: sirfexcel,
   },
   {
     id: 7,
-    title: "B Plan Competition",
-    description: "Teams present their Business Plans featuring groundbreaking products or services",
-    date: "5th October",
-    image: businessplan,
+    title: "Cardinal Deception",
+    description:"This is an intense mind game where strategy, disguise, and wit collide in a twisted UNO-style showdown!" ,
+    date: "18th Jan",
+    image: cardinaldeception,
   },
   {
     id: 8,
-    title: "House of Legacy",
-    description: "Are you the guy who thinks that your analytical thinking can create a change in the business empire? Hedgeit brings you the perfect chance to invest in and enhance your knowledge in the world of business.",
-    date: "5th October",
-    image: houseoflegacy,
+    title: "Campus Capitalist",
+    description: "Campus Capitalist at Bitotsav'25,a thrilling business simulation of strategy, risk, and financial conquest!",
+    date: "22nd March",
+    image: campusCaptilist,
   },
   {
     id: 9,
@@ -95,17 +99,38 @@ const events = [
   },
   {
     id: 12,
-    title: "Market Kshetra",
-    description: "Market Kshetra is a virtual stock market simulation game where participants can trade in stocks, commodities, and currencies.",
-    date: "20th January",
-    image: marketkshtera,
+    title: "Surplus and defect",
+    description: "Escape the Financial Matrix is a thrilling strategy-based game of wealth, wits, and survival where every move can lead to fortune—or financial downfall.",
+    date: "19th January",
+    image: surplusanddefect,
   },
   {
     id: 13,
     title: "Estimania",
     description: "Estimania is a finance club event that tests your ability to estimate the value of a product or service.",
-    date: "20th January",
+    date: "18th January",
     image: estimania,
+  },
+   {
+    id: 14,
+    title: "Escape The Rat Race",
+    description: "Conquer the debt maze at FinStreet 2025 - a high-stakes strategic battle of wit, finance, and freedom!",
+    date: "19th Jan",
+    image: escapetheratrace,
+  },
+   {
+    id: 15,
+    title: "Musical Night",
+    description: "Dhwani Night at IC Arena - a magical evening of rhythm, energy, and unforgettable performances in collaboration with the Finance Club!",
+    date: "19th Jan",
+    image: musicalnight,
+  },
+   {
+    id: 16,
+    title: "Dj Night",
+    description: "Dance Club at IC Arena - a magical evening with unforgettable performances in collaboration with the Finance Club!",
+    date: "19th Jan",
+    image: djnight,
   },
 ];
 
