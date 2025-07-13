@@ -46,6 +46,10 @@ import gautam from "../assets/Teamfc/Gautam_Kumar.jpg";
 import samyak from "../assets/Teamfc/Samyak.jpg";
 import vaibhavB from "../assets/Teamfc/VaibhavBahal.jpg";
 import piyush from "../assets/Teamfc/Piyush.jpg";
+import Pratik from "../assets/Teamfc/Pratik.jpg";
+import Ashish from "../assets/Teamfc/Ashish.jpg";
+import Srishti from "../assets/Teamfc/Srishti.jpeg";
+import Daksh from "../assets/Teamfc/Daksh.jpg";
 
 
 
@@ -164,7 +168,7 @@ export const teamData = [
       {
         name: "Pratik Singh",
         position: "Treasurer",
-        // image: pratik,
+        image: Pratik,
         linkedin: "https://www.linkedin.com/in/pratik-singh-bb3859316/",
         instagram: "https://www.instagram.com/_pratik_singh_31/",
       },
@@ -182,42 +186,42 @@ export const teamData = [
       {
         name: "Ashish Ranjan",
         position: "Executive Member",
-        // image:ashish,
+        image: Ashish,
         linkedin: "https://www.linkedin.com/in/ashish-ranjan-b39b45298/",
       },
       {
         name: "Hardik",
         position: "Executive Member",
-        image:hardik,
+        image: hardik,
         linkedin: "https://www.linkedin.com/in/hardik-khalkho-16a19a2a8/",
       },
       {
         name: "Rahul Bharti",
         position: "Executive Member",
-        image:rahulB,
+        image: rahulB,
         linkedin: "https://www.linkedin.com/in/rahul-bharti-757173276/",
       },
       {
         name: "Nihal Srivastava",
         position: "PG Executive Member",
-        image:nihal,
+        image: nihal,
         linkedin: "https://www.linkedin.com/in/nihal-srivastava-a63060167/",
       },
       {
         name: "Shirish Mishra",
         position: "PG Executive Member",
-        image:shirish,
+        image: shirish,
       },
       {
         name: "Gautam Kumar",
         position: "PG Executive Member",
-        image:gautam,
+        image: gautam,
         linkedin: "https://www.linkedin.com/in/gautam-kumar-075b39224/",
       },
       {
-        name: "Shrishti Tiwri",
+        name: "Shrishti Tiwari",
         position: "PG Executive Member",
-        // image:shrishtiT,
+        image: Srishti,
       },
     ],
   },
@@ -227,7 +231,7 @@ export const teamData = [
       {
         name: "Ankit Verma",
         position: "Web Head",
-        image:ankit ,
+        image: ankit,
         linkedin: "https://www.linkedin.com/in/ankitverma2405/",
       },
       {
@@ -245,11 +249,6 @@ export const teamData = [
   {
     title: "Content Team",
     members: [
-      {
-        name: "Harsh Verma",
-        position: "Media Head",
-        image: harshV,
-      },
       {
         name: "Divya",
         position: "Content Head",
@@ -288,19 +287,19 @@ export const teamData = [
       {
         name: "Daksh Kweera",
         position: "Outreach Lead",
-        // image: daksh,
+        image: Daksh,
         linkedin: "https://www.linkedin.com/in/daksh-kweera-2008aa289/",
       },
       {
         name: "Sneha Mukherjee",
         position: "Social Media Lead",
-        image:sneha ,
+        image: sneha,
         linkedin: "https://www.linkedin.com/in/sneha-mukherjeee/",
       },
       {
         name: "Tashi Nayak",
         position: "Social Media Lead",
-        image:tashi ,
+        image: tashi,
         instagram: "https://www.instagram.com/tashi_nayak/",
         linkedin: "https://www.linkedin.com/in/tashi-900227301/",
       },
@@ -312,19 +311,19 @@ export const teamData = [
       {
         name: "Divya Barnwal",
         position: "Sponsorship Head",
-        image:divyaB ,
+        image: divyaB,
         linkedin: "https://www.linkedin.com/in/divya-barnwal-13b326271/",
       },
       {
         name: "Harsh Raj",
         position: "Sponsorship Lead",
-        image:harshR ,
+        image: harshR,
         instagram: "https://www.instagram.com/_harshrj/",
       },
       {
         name: "Rakshit Kumar",
         position: "Sponsorship Lead",
-        image:rakshitK ,
+        image: rakshitK,
         linkedin: "https://www.linkedin.com/in/rakshit-kumar-9979b1292/",
       },
     ],
@@ -350,8 +349,13 @@ export const teamData = [
       {
         name: "Ritik Raj",
         position: "Publicity Head",
-        image:ritik,
+        image: ritik,
         linkedin: "https://www.linkedin.com/in/ritikraj0005/",
+      },
+      {
+        name: "Harsh Verma",
+        position: "Media Head",
+        image: harshV,
       },
     ],
   },
@@ -374,7 +378,7 @@ export const teamData = [
         name: "Rahul Kumar",
         position: "Event Lead",
         linkedin: "https://www.linkedin.com/in/rahul-kumar-2297ba2a8/",
-        image:rahulK,
+        image: rahulK,
       },
     ],
   },
