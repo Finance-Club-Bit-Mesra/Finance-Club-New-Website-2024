@@ -1,18 +1,13 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import stalkthestock from "../../assets/events/stalkthestock.jpeg";
-import behindthestump from "../../assets/events/behindthestumps.jpeg";
-import houseoflegacy from "../../assets/events/houseoflegacy.jpeg";
-import enigma from "../../assets/events/enigma.jpeg";
-import tycoon from "../../assets/events/tycoon.jpeg";
-import marketkshtera from "../../assets/events/maket_kshetra.jpeg";
+import stalkthestock from "../../assets/events/stalkthestock.jpg";
+import behindthestump from "../../assets/events/behindthestumps.jpg";
+import enigma from "../../assets/events/enigma.jpg";
 import arthanarth from "../../assets/events/arthanarth.jpg";
-import businessplan from "../../assets/events/bplan.jpg";
 import chess from "../../assets/events/chess.jpg";
 import estimania from "../../assets/events/estimania.jpg";
 import wallstreet from "../../assets/events/wallstreet.jpg";
-import bitnishan from "../../assets/events/bitnishan.jpg";
 import cfa from "../../assets/workshop/cfa.jpg";
 import virendra from "../../assets/workshop/virendra.jpg";
 import zerodha from "../../assets/workshop/zerodha.jpg";
@@ -20,11 +15,11 @@ import zerodha from "../../assets/workshop/zerodha.jpg";
 const carouselData = [
   {
     direction: 'left',
-    images: [wallstreet, bitnishan, estimania, chess, businessplan, behindthestump, houseoflegacy],
+    images: [wallstreet, estimania, chess, behindthestump],
   },
   {
     direction: 'right',
-    images: [stalkthestock, arthanarth, enigma, tycoon, marketkshtera],
+    images: [stalkthestock, arthanarth, enigma],
   },
 ];
 

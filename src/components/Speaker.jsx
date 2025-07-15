@@ -1,36 +1,42 @@
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import abhishek from '../assets/speakers/abhishek.webp'
-import abhizura from '../assets/speakers/abhizura.jpeg'
-import shahnawaz from '../assets/speakers/shahnawaz.jpeg'
-import virendra from '../assets/speakers/virendra.jpeg'
-import khushi from '../assets/speakers/khushi.jpeg'
+import abhishek from '../assets/speakers/abhishek.jpg'
+import uzair from '../assets/speakers/uzair.jpg'
+import abhay from '../assets/speakers/abhay.jpg'
+import virendra from '../assets/speakers/virendraverma.jpg'
+import sakchi from '../assets/speakers/sakchi.jpg'
+import koyesha from '../assets/speakers/koyesha.jpg'
 const Speaker = () => {
   const speakers = [
     {
-      name: "Abhishek Kar",
-      role: "Youtuber, Stock Trader, Business Strategist, Investor",
+      name: "Abhishek Kumar",
+      role: "Abhishek Kumar - a dynamic youth leader, writer, entrepreneur, and business strategist, currently the Founder & CEO of Digital Alchemist Lab.",
       image: abhishek,
     },
     {
-      name: "Abhishek Sagar",
-      role: "Founder & Ceo ZuraVerse, Entrepreneur",
-      image: abhizura,
+      name: "Abhay Mitra",
+      role: "Abhay Mitra - a forward-thinking entrepreneur, consultant, influencer, and founder of DS Reversal and Abstract Entry, known for redefining financial strategies.",
+      image: abhay,
     },
     {
       name: "Virendra Verma",
-      role: "Trader Portfolio Manager, Expert in Capital Market",
+      role: " virendra verma - Trader Portfolio Manager, Expert in Capital Market",
       image: virendra,
     },
     {
-      name: "Khushi Panjwani",
-      role: "Entrepreneur 40 U 40, TedX Speaker, Author, Shark Tank India S-3, World Record Holder",
-      image: khushi,
+      name: "Sakchi Jain",
+      role: "Sakchi Jain - a renowned Chartered Accountant, TEDx speaker, award-winning influencer, and content creator with a following of over 1.6 million.",
+      image: sakchi,
     },
     {
-      name: "Shahnawaz Khan",
-      role: "Full Stack Blockchain Developer, Senior Manager E-Cell IIITR, Web3.0 Builder, Tokenization, Digital Assets & RWA",
-      image: shahnawaz,
+      name: "Koyesha Mukherjee ",
+      role: "Koyesha Mukherjee - an impactful youth leader, author, and UK Government diplomat, driving change as the founder of The Leading You^nth.",
+      image: koyesha,
+    },
+     {
+      name: "Uzair Ahmad ",
+      role: "Uzair Ahmad - a dynamic trader, analyst, biotechnology graduate, and finance content creator known for his influential insights through TraderTooth.",
+      image: uzair,
     },
   ]
 
