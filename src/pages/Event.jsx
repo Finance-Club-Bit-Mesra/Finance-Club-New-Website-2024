@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import stalkthestock from "../assets/events/stalkthestock.jpg";
+import stalkthestock from "../assets/events/StalkTheStock.jpg";
 import behindthestump from "../assets/events/behindthestumps.jpg";
 import sellMeThis from "../assets/events/sellMeThis.jpg";
 import enigma from "../assets/events/enigma.jpg";
