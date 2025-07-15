@@ -529,4 +529,5 @@ export const CONTACT_DATA = {
     { link: "https://twitter.com", icon: "<FaTwitter />" },
     { link: "https://instagram.com", icon: "<FaInstagram />" },
   ],
+  
 };
