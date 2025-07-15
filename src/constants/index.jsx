@@ -1,5 +1,5 @@
 import finstreet from "../assets/events/finstreet.jpg";
-import stalkthestock from "../assets/events/stalkthestock.jpg";
+import stalkthestock from "../assets/events/StalkTheStock.jpg";
 import behindthestump from "../assets/events/behindthestumps.jpg";
 import enigma from "../assets/events/enigma.jpg";
 // import bit from "../assets/events/adquest.jpg";
