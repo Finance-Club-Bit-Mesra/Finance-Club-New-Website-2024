@@ -50,7 +50,8 @@ import Pratik from "../assets/Teamfc/Pratik.jpg";
 import Ashish from "../assets/Teamfc/Ashish.jpg";
 import Srishti from "../assets/Teamfc/Srishti.jpeg";
 import Daksh from "../assets/Teamfc/Daksh.jpg";
-
+import priyanka from "../assets/Teamfc/Priyanka.jpg";
+import arpita from "../assets/Teamfc/arpita.jpg";
 
 
 export const teamData = [
@@ -126,7 +127,7 @@ export const teamData = [
       {
         name: "Priyanka Singh",
         position: "Joint Secretary",
-        // image: priyanka,
+        image: priyanka,
         linkedin: "https://www.linkedin.com/in/priyanka-singh-29b452295/",
         instagram: "https://www.instagram.com/_singhpriyanka12/",
       },
@@ -276,7 +277,7 @@ export const teamData = [
       {
         name: "Arpita Sinha",
         position: "Outreach Head",
-        // image: arpita,
+        image: arpita,
       },
       {
         name: "Aditya Agarwal",
@@ -289,19 +290,6 @@ export const teamData = [
         position: "Outreach Lead",
         image: Daksh,
         linkedin: "https://www.linkedin.com/in/daksh-kweera-2008aa289/",
-      },
-      {
-        name: "Sneha Mukherjee",
-        position: "Social Media Lead",
-        image: sneha,
-        linkedin: "https://www.linkedin.com/in/sneha-mukherjeee/",
-      },
-      {
-        name: "Tashi Nayak",
-        position: "Social Media Lead",
-        image: tashi,
-        instagram: "https://www.instagram.com/tashi_nayak/",
-        linkedin: "https://www.linkedin.com/in/tashi-900227301/",
       },
     ],
   },
@@ -356,6 +344,19 @@ export const teamData = [
         name: "Harsh Verma",
         position: "Media Head",
         image: harshV,
+      },
+      {
+        name: "Sneha Mukherjee",
+        position: "Social Media Lead",
+        image: sneha,
+        linkedin: "https://www.linkedin.com/in/sneha-mukherjeee/",
+      },
+      {
+        name: "Tashi Nayak",
+        position: "Social Media Lead",
+        image: tashi,
+        instagram: "https://www.instagram.com/tashi_nayak/",
+        linkedin: "https://www.linkedin.com/in/tashi-900227301/",
       },
     ],
   },

@@ -24,7 +24,7 @@ const Speaker = () => {
       image: virendra,
     },
     {
-      name: "Shachi Jain",
+      name: "Sakchi Jain",
       role: "Sakchi Jain - a renowned Chartered Accountant, TEDx speaker, award-winning influencer, and content creator with a following of over 1.6 million.",
       image: sakchi,
     },
