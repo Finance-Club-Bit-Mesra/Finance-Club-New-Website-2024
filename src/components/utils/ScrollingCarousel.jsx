@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import stalkthestock from "../../assets/events/stalkthestock.jpg";
+import stalkthestock from "../../assets/events/StalkTheStock.jpg";
 import behindthestump from "../../assets/events/behindthestumps.jpg";
 import enigma from "../../assets/events/enigma.jpg";
 import arthanarth from "../../assets/events/arthanarth.jpg";
