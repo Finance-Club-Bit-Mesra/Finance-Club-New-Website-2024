@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="flex flex-wrap gap-8">
               <address className="not-italic">
                 <p className="mb-2">{CONTACT_DATA.address}</p>
-                <ContactItem icon={<FaPhone size={16} />} text="Aalok Praveen (President):" href="tel:+919546949124" linkText="+91 95469 49124" />
+                <ContactItem icon={<FaPhone size={16} />} text="Ronit Jain (President):" href="tel:+919340683467" linkText="+91 93406 83467" />
                 <ContactItem icon={<FaEnvelope size={16} />} href="mailto:financeclub@bitmesra.ac.in" linkText="financeclub@bitmesra.ac.in" />
               </address>
             </div>
