@@ -13,7 +13,7 @@ import rishabh from "../assets/Teamfc/RishabhSinha_k22.jpg";
 import ankit from "../assets/Teamfc/AnkitVerma.webp";
 import harshvardhan from "../assets/Teamfc/Harshvardhan.webp";
 import divya from "../assets/Teamfc/Divya.webp";
-import divyaB from "../assets/Teamfc/divyabarnwal_k22.jpg";
+import divyaB from "../assets/Teamfc/Divyabarnwal_k22.jpg";
 import nikhil from "../assets/Teamfc/Nikhil.webp";
 import harshV from "../assets/Teamfc/HarshVerma.webp";
 import prachi from "../assets/Teamfc/Prachi.webp";
@@ -50,9 +50,8 @@ import Pratik from "../assets/Teamfc/Pratik.jpg";
 import Ashish from "../assets/Teamfc/Ashish.jpg";
 import Srishti from "../assets/Teamfc/Srishti.jpeg";
 import Daksh from "../assets/Teamfc/Daksh.jpg";
-import priyanka from "../assets/Teamfc/Priyanka.jpg";
+import priyanka from "../assets/Teamfc/priyanka.jpg";
 import arpita from "../assets/Teamfc/arpita.jpg";
-
 
 export const teamData = [
   {
