@@ -1,51 +1,39 @@
-### **Steps to Get Started**
+# 💰 Finance Club BIT Mesra - Official Website
 
-#### **Before You Begin: One-Time Setup**
-1. **Fork the Repository**:  
-   - Fork [this repository](https://github.com/iammdzaidalam/FC-Website) so you can make changes without affecting the original project until you're ready to merge them.
+This repository is part of the **Finance Club BIT Mesra** organization.
 
-2. **Go to Your Forked Repository**:  
-   - The URL of your forked repository will look like `<your_github_username>/FC-Website`.
+Developed by **Deepak Pradhan** (*Vice President*)  
+🔗 [LinkedIn - Deepak Pradhan](https://www.linkedin.com/in/deepakpradhan10242/)
+Maintained by the **Web Team**, Finance Club BIT Mesra
 
-3. **Clone Your Forked Repository**:  
-   - Click the green **Code** button in your forked repository and copy the HTTPS URL.  
-   - Open **Git Bash** (or Terminal on UNIX systems) in the folder where you want to clone the repository, and run the following command:  
-     ```bash
-     git clone <paste_your_cloned_URL_here>
-     ```
+## 🌐 About the Project
 
-4. **Verify Cloning**:  
-   - Ensure a folder named **FC-Website** is now present in your current working directory.
+This is the official website for the Finance Club of BIT Mesra. The website serves as a hub for all club-related activities, events, blogs, and finance resources for students. It’s built to be fast, responsive, and user-friendly.
 
----
+## 🚀 Tech Stack
 
-### **Steps to Submit Your Project**
-Follow these steps every time you make changes and want to submit your work:
+- **Frontend**: React.js (Vite)  
+- **Styling**: Tailwind CSS  
+- **Routing**: React Router  
+- **Animations**: GSAP, Framer Motion  
+- **Maps**: Leaflet.js  
+- **Deployment**: GitHub Pages
 
-1. **Copy Your Project Folder**:  
-   - Copy your project folder into the local clone of **FC-Website**.
+## 📁 Features
 
-2. **Place Inside the Correct Directory**:  
-   - Paste it inside the respective project folder within **FC-Website**.
+- 📢 Event updates and announcements  
+- 🧑‍💼 Team member showcase  
+- 📊 Blogs and finance insights  
+- 📅 Upcoming contests (integration-ready)  
+- 🎨 Interactive UI and animations  
+- 🌍 Club location via maps
 
-3. **Rename Your Project Folder**:  
-   - Rename your folder to your full name (e.g., *John-Doe*).
+## 🛠️ Getting Started
 
-4. **Commit and Push Changes**:  
-   - Open **Git Bash** in the **FC-Website** folder and execute the following commands in order:  
-     ```bash
-     git add .
-     git commit -m "Your commit message"
-     git push -u origin main
-     ```
+Clone the repo and install dependencies:
 
-5. **Create a Pull Request**:  
-   - After pushing your project to GitHub, go to your forked repository in the browser.  
-   - Click the big green **“Compare & pull request”** button.  
-   - On the pull request page, you can add a description of the changes you made.  
-   - Once ready, click the **“Create Pull Request”** button.  
-
----
-
-### **Congratulations!**
-You’ve successfully created a pull request for the **Finance Club Website** project! 🎉 
+```bash
+git clone https://github.com/Finance-Club-Bit-Mesra/Finance-Club-New-Website-2024.git
+cd Finance-Club-New-Website-2024
+npm install
+npm run dev
