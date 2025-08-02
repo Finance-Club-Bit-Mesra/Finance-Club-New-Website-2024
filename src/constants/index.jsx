@@ -507,7 +507,7 @@ export const CONTACT_DATA = {
     {
       name: "Prachi",
       designation: "Joint President",
-      number: "+916206437531",
+      number: "+917717779313",
     },
     {
       name: "Gourab Mahato",
