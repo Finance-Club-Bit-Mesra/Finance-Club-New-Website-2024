@@ -2,9 +2,7 @@
 
 This repository is part of the **Finance Club BIT Mesra** organization.
 
-Developed by **Deepak Pradhan** (*Vice President*)  
-🔗 [LinkedIn - Deepak Pradhan](https://www.linkedin.com/in/deepakpradhan10242/)
-Maintained by the **Web Team**, Finance Club BIT Mesra
+Developed and Maintained by **Web Team**, Finance Club BIT Mesra 
 
 ## 🌐 About the Project
 
